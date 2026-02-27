@@ -15,6 +15,12 @@ namespace YNQ.Movement.States
                 controller.ChangeState(controller.Standing);
                 return;
             }
+            
+            if(controller.CrouchHeld)
+            {
+                controller.ChangeState(controller.Crouching);
+                return;
+            }
 
             var dir = GetMoveDirection();
             
