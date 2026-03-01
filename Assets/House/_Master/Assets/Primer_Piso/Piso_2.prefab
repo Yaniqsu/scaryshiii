@@ -1,0 +1,3056 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5114319256245132279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5114319256245132278}
+  m_Layer: 0
+  m_Name: Piso_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &5114319256245132278
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5114319256245132279}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6810474541524345172}
+  - {fileID: 6810474541350659072}
+  - {fileID: 6810474541420629644}
+  - {fileID: 6810474541854505397}
+  - {fileID: 6810474541884909622}
+  - {fileID: 6810474542721109001}
+  - {fileID: 6810474543129931554}
+  - {fileID: 6810474543277546840}
+  - {fileID: 6810474543179727290}
+  - {fileID: 6810474542567935574}
+  - {fileID: 6810474541718562376}
+  - {fileID: 6810474541960821215}
+  - {fileID: 6810474541176288460}
+  - {fileID: 6810474542383716774}
+  - {fileID: 6810474541189971273}
+  - {fileID: 6810474541717423557}
+  - {fileID: 6810474543223500145}
+  - {fileID: 6810474541566031698}
+  - {fileID: 6810474542948556794}
+  - {fileID: 6810474542402622376}
+  - {fileID: 6810474542613952211}
+  - {fileID: 6810474542981329603}
+  - {fileID: 6810474541650248674}
+  - {fileID: 6810474541162952412}
+  - {fileID: 6810474542196937154}
+  - {fileID: 6810474543010356163}
+  - {fileID: 6810474541721168486}
+  - {fileID: 6810474541415244888}
+  - {fileID: 6810474543127392751}
+  - {fileID: 6810474542563503930}
+  - {fileID: 6810474541782995653}
+  - {fileID: 6810474542191881201}
+  - {fileID: 6810474542844489916}
+  - {fileID: 6810474543236077974}
+  - {fileID: 6810474542349928137}
+  - {fileID: 6810474541539929976}
+  - {fileID: 6810474542740584192}
+  - {fileID: 6810474541511548963}
+  - {fileID: 6810474542666487311}
+  - {fileID: 6810474542088107828}
+  - {fileID: 6810474541200234041}
+  - {fileID: 6810474542204930087}
+  - {fileID: 6810474542485122856}
+  - {fileID: 6810474541273951533}
+  - {fileID: 6810474542259465143}
+  - {fileID: 6810474542964576871}
+  - {fileID: 6810474541539911350}
+  - {fileID: 6810474542158770647}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &5114319255032910902
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5899162
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0096955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.2298594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474543129931554 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319255032910902}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319255059696379
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.08991623
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.009696
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.72985935
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474543127392751 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319255059696379}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319255177979468
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.0899162
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0096955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.2298594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474543277546840 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319255177979468}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319255203586690
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.089916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0096965
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.77014065
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474543236077974 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319255203586690}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319255224555109
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.08991623
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0096955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.7298594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474543223500145 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319255224555109}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319255250500270
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.589916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0096955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.2298594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474543179727290 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319255250500270}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319255317433256
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.589916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0096965
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.77014065
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474542844489916 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319255317433256}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319255446085847
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.589916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.009696
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.72985935
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474543010356163 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319255446085847}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319255450077655
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.089916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.009696
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.2298594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474542981329603 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319255450077655}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319255466830195
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.089916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.009697
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.7701406
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474542964576871 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319255466830195}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319255491241198
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5899162
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.009696
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.2298594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474542948556794 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319255491241198}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319255606809646
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.08991623
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0096965
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.77014065
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474542563503930 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319255606809646}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319255611815234
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.089916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0096955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.2298594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474542567935574 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319255611815234}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319255694627900
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5899162
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.009697
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.7701406
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474542485122856 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319255694627900}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319255714679828
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.089916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0096965
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.2701406
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474542740584192 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319255714679828}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319255727208221
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.08991623
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0096955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.2298594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474542721109001 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319255727208221}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319255773310235
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.0899162
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0096965
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.2701406
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474542666487311 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319255773310235}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319255825583559
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.589916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.009696
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.2298594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474542613952211 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319255825583559}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319255902589091
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.589916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.009697
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.7701406
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474542259465143 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319255902589091}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319256045693116
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.0899162
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.009696
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.2298594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474542402622376 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319256045693116}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319256064598706
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.589916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0096955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.7298594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474542383716774 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319256064598706}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319256098389469
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.589916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0096965
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.77014065
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474542349928137 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319256098389469}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319256210539211
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.589916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0096955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.7298594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474541960821215 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319256210539211}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319256238215397
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.0899162
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0096965
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.77014065
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474542191881201 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319256238215397}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319256242727638
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.089916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.009696
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.72985935
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474542196937154 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319256242727638}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319256250725171
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 41
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.08991623
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.009697
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.7701406
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474542204930087 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319256250725171}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319256271588035
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 47
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.08991623
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.009695
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.7298594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474542158770647 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319256271588035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319256341990432
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5899162
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0096965
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.2701406
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474542088107828 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319256341990432}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319256403962321
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5899162
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0096965
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.77014065
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474541782995653 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319256403962321}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319256440623474
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.0899162
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.009696
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.72985935
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474541721168486 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319256440623474}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319256469445980
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.589916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0096955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.2298594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474541718562376 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319256469445980}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319256470453969
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5899162
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0096955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.7298594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474541717423557 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319256470453969}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319256570352418
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.589916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.009695
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.7298594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474541884909622 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319256570352418}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319256575591073
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.089916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.009695
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.7298594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474541854505397 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319256575591073}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319256645966400
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5899162
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.009695
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.7298594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474541524345172 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319256645966400}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319256667282231
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.589916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0096965
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.2701406
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474541511548963 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319256667282231}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319256741426584
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.589916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.009695
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.7298594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474541420629644 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319256741426584}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319256771714892
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5899162
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.009696
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.72985935
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474541415244888 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319256771714892}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319256805406966
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.589916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.009696
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.2298594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474541650248674 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319256805406966}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319256889494598
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.08991623
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.009696
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.2298594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474541566031698 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319256889494598}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319256898557036
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.589916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0096965
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.2701406
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474541539929976 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319256898557036}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319256898968994
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 46
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.589916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.009697
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.7701406
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474541539911350 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319256898968994}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319256961428781
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.08991623
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0096965
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.2701406
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474541200234041 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319256961428781}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319256981128797
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.0899162
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0096955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.7298594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474541189971273 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319256981128797}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319257002545112
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.089916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0096955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.7298594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474541176288460 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319257002545112}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319257025318344
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.589916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.009696
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.72985935
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474541162952412 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319257025318344}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319257080487700
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.0899162
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.009695
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.7298594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474541350659072 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319257080487700}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5114319257165715001
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5114319256245132278}
+    m_Modifications:
+    - target: {fileID: 1088705145928941995, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Piso_Cocina_oscuro (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_RootOrder
+      value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.0899162
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.009697
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.7701406
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+--- !u!4 &6810474541273951533 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763753847093000980, guid: 0e893fe6fa54d3540b461e9ebd21ddf7, type: 3}
+  m_PrefabInstance: {fileID: 5114319257165715001}
+  m_PrefabAsset: {fileID: 0}

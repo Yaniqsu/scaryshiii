@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using YNQ.InteractionSystem;
 using YNQ.Movement;
 
 namespace YNQ.Player
@@ -11,8 +12,10 @@ namespace YNQ.Player
         [SerializeField] private PlayerInput _playerInput;
         [SerializeField] private MovementController _movementController;
         [SerializeField] private CameraController _cameraController;
+        [SerializeField] private InteractionController _interactionController;
         
         [Header("Actions")] 
+            [SerializeField] private string _interactionAction;
         [SerializeField] private string _moveAction;
         [SerializeField] private string _runAction;
         [SerializeField] private string _rotateAction;
@@ -35,6 +38,9 @@ namespace YNQ.Player
 
         private void EnableInput()
         {
+            _playerInput.actions[_interactionAction].started += OnInteractionStart;
+            _playerInput.actions[_interactionAction].canceled += OnInteractionEnd;
+            
             _playerInput.actions[_runAction].started += OnRunStart;
             _playerInput.actions[_runAction].canceled += OnRunEnd;
             _playerInput.actions[_jumpAction].started += OnJump;
@@ -45,6 +51,9 @@ namespace YNQ.Player
 
         private void DisableInput()
         {
+            _playerInput.actions[_interactionAction].started -= OnInteractionStart;
+            _playerInput.actions[_interactionAction].canceled -= OnInteractionEnd;
+            
             _playerInput.actions[_runAction].started -= OnRunStart;
             _playerInput.actions[_runAction].canceled -= OnRunEnd;
             _playerInput.actions[_jumpAction].started -= OnJump;
@@ -75,7 +84,16 @@ namespace YNQ.Player
 
         private void OnRotate(InputAction.CallbackContext context)
         {
-            _cameraController.Rotate(context.ReadValue<Vector2>());
+            var mouseDelta = context.ReadValue<Vector2>();
+            
+            _cameraController.Rotate(mouseDelta);
+            _interactionController.MouseDelta = mouseDelta;
         }
+
+        private void OnInteractionStart(InputAction.CallbackContext context)
+            => _interactionController.BeginInteraction();
+        
+        private void OnInteractionEnd(InputAction.CallbackContext context)
+            => _interactionController.EndInteraction();
     }
 }

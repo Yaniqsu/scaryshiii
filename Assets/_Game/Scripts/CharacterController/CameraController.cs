@@ -30,6 +30,8 @@ namespace YNQ.Movement
         private float _targetFrequency;
         
         private Coroutine _changeCameraHeightRoutine;
+        
+        public bool RotationLocked { get; set; }
 
         private void Start()
         {
@@ -75,6 +77,9 @@ namespace YNQ.Movement
 
         public void Rotate(Vector2 delta)
         {
+            if (RotationLocked)
+                return;
+            
             _rotation.x += delta.x * _lookSensitivity * Time.deltaTime;
             _rotation.y -= delta.y * _lookSensitivity * Time.deltaTime;
             
