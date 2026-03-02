@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -30,7 +31,7 @@ namespace YNQ.InteractionSystem
             _mainCamera = Camera.main;
         }
 
-        private void Update()
+        private void LateUpdate()
         {
             if(_inInteraction)
                 UpdateInteractable();
@@ -42,7 +43,7 @@ namespace YNQ.InteractionSystem
 
         private void FindInteractable()
         {
-            if (Physics.Raycast(_camera.position, _camera.forward, out _hit, _detectionlength,
+            if (Physics.SphereCast(_camera.position, 0.05f, _camera.forward, out _hit, _detectionlength,
                     _interactableLayer))
             {
                 if(_hit.rigidbody.TryGetComponent(out IInteractable interactable))
@@ -53,7 +54,7 @@ namespace YNQ.InteractionSystem
                 }
             }
             else if(_currentInteractable != null)
-                LostInteractable();
+                    LostInteractable();
         }
 
         private void UpdateInteractable()
@@ -117,6 +118,12 @@ namespace YNQ.InteractionSystem
             
             _inInteraction = false;
             onInteractionEnd?.Invoke();
+        }
+
+        private void OnDrawGizmos()
+        {
+            Gizmos.color = Color.crimson;
+            Gizmos.DrawRay(_camera.position, _camera.forward * _detectionlength);
         }
     }
 }
