@@ -446,11 +446,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2e56248351b5104e911aaedfffeb1e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  _rb: {fileID: 731994923592257959}
-  _hinge: {fileID: 7254802051926907254}
   _openDoorSource: {fileID: 6792119770327549708}
   _closeDoorSource: {fileID: 7547821961215841683}
   _squeakSource: {fileID: 6852700748237824076}
+  _checkDotProduct: 1
+  _angleTreshold: 0.2
   torqueStrength: 2
   maxTorque: 10
   mouseSensitivity: 1

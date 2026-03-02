@@ -2,6 +2,7 @@
 
 namespace YNQ.InteractionSystem
 {
+    [RequireComponent(typeof(Rigidbody))]
     public abstract class PhysicsInteractable : MonoBehaviour, IInteractable
     {
         public InteractionType Type => InteractionType.Physics;

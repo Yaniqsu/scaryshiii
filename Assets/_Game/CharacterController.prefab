@@ -168,7 +168,7 @@ MonoBehaviour:
   _detectionlength: 2
   _interactableLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 192
   onPhysicsInteractableFound:
     m_PersistentCalls:
       m_Calls: []
@@ -688,7 +688,7 @@ MonoBehaviour:
   Lens:
     FieldOfView: 60.000004
     OrthographicSize: 5
-    NearClipPlane: 0.3
+    NearClipPlane: 0.01
     FarClipPlane: 1000
     Dutch: 0
     ModeOverride: 0

@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -46,7 +45,7 @@ namespace YNQ.InteractionSystem
             if (Physics.SphereCast(_camera.position, 0.05f, _camera.forward, out _hit, _detectionlength,
                     _interactableLayer))
             {
-                if(_hit.rigidbody.TryGetComponent(out IInteractable interactable))
+                if(_hit.rigidbody && _hit.rigidbody.TryGetComponent(out IInteractable interactable))
                     GetInteractable(interactable, _hit.transform);
                 else
                 {

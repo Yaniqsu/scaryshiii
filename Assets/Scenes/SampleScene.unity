@@ -277,12 +277,12 @@ Camera:
   m_ShutterSpeed: 0.005
   m_Aperture: 16
   m_FocusDistance: 10
-  m_FocalLength: 50
+  m_FocalLength: 13.858139
   m_BladeCount: 5
   m_Curvature: {x: 2, y: 11}
   m_BarrelClipping: 0.25
   m_Anamorphism: 0
-  m_SensorSize: {x: 36, y: 24}
+  m_SensorSize: {x: 21.946, y: 16.002}
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -290,7 +290,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 60.000004
   orthographic: 0
@@ -1082,63 +1082,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: faace4c28cdb0a648b4e98b0c7642941, type: 3}
---- !u!1001 &5353081610207872073
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2298399526616186376, guid: 5de037a51546b1b4a8ae879bab851575, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.27321592
-      objectReference: {fileID: 0}
-    - target: {fileID: 2298399526616186376, guid: 5de037a51546b1b4a8ae879bab851575, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 2298399526616186376, guid: 5de037a51546b1b4a8ae879bab851575, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.100857586
-      objectReference: {fileID: 0}
-    - target: {fileID: 2298399526616186376, guid: 5de037a51546b1b4a8ae879bab851575, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2298399526616186376, guid: 5de037a51546b1b4a8ae879bab851575, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2298399526616186376, guid: 5de037a51546b1b4a8ae879bab851575, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2298399526616186376, guid: 5de037a51546b1b4a8ae879bab851575, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2298399526616186376, guid: 5de037a51546b1b4a8ae879bab851575, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2298399526616186376, guid: 5de037a51546b1b4a8ae879bab851575, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 2298399526616186376, guid: 5de037a51546b1b4a8ae879bab851575, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5837092361537288488, guid: 5de037a51546b1b4a8ae879bab851575, type: 3}
-      propertyPath: m_Name
-      value: Desk
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5de037a51546b1b4a8ae879bab851575, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1152,4 +1095,3 @@ SceneRoots:
   - {fileID: 546122946}
   - {fileID: 550081027}
   - {fileID: 784911577}
-  - {fileID: 5353081610207872073}

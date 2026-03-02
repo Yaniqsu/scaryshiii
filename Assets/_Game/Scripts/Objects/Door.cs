@@ -1,17 +1,20 @@
 using UnityEngine;
 using YNQ.InteractionSystem;
 
+
+[RequireComponent(typeof(HingeJoint))]
 public class Door : PhysicsInteractable
 {
-    [SerializeField] private Rigidbody _rb;
-    [SerializeField] private HingeJoint _hinge;
     [SerializeField] private AudioSource _openDoorSource;
     [SerializeField] private AudioSource _closeDoorSource;
     [SerializeField] private AudioSource _squeakSource;
+    [SerializeField] private bool _checkDotProduct;
+    [SerializeField] private float _angleTreshold = 0.1f;
     [SerializeField] private float torqueStrength = 150f;
     [SerializeField] private float maxTorque = 300f;
     [SerializeField] private float mouseSensitivity = 2f;
 
+    private HingeJoint _hinge;
 
     private bool _isInteracting;
     private Vector3 _hingeAxisWorld;
@@ -24,6 +27,8 @@ public class Door : PhysicsInteractable
     protected override void Awake()
     {
         base.Awake();
+
+        _hinge = GetComponent<HingeJoint>();
         
         _hingeAxisWorld = transform.TransformDirection(_hinge.axis);
     }
@@ -48,7 +53,8 @@ public class Door : PhysicsInteractable
     {
         _isInteracting = true;
         
-        _torqueSign = (int)Mathf.Sign(Vector3.Dot(player.forward, _rb.transform.forward));
+        _torqueSign = _checkDotProduct ? 
+            (int)Mathf.Sign(Vector3.Dot(player.forward, rb.transform.forward)): -1;
     }
 
     public override void InteractionUpdate(InteractionContext context)
@@ -70,11 +76,11 @@ public class Door : PhysicsInteractable
             maxTorque
         ) * _torqueSign;
         
-        _rb.AddTorque(_hingeAxisWorld * torqueAmount, ForceMode.Force);
+        rb.AddTorque(_hingeAxisWorld * torqueAmount, ForceMode.Force);
         
-        if(_hinge.angle > 0.1f && _doorClosed)
+        if(_hinge.angle > _angleTreshold && _doorClosed)
             OpenDoor();
-        else if(_hinge.angle < 0.1f && !_doorClosed)
+        else if((float.IsNaN(_hinge.angle) || _hinge.angle < _angleTreshold) && !_doorClosed)
             CloseDoor();
     }
 
