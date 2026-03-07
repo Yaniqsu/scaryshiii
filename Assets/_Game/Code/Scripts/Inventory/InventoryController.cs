@@ -54,6 +54,8 @@ namespace YNQ.Dark.InventorySystem
             
             _activeItemObject.transform.localPosition = Vector3.zero;
             _activeItemObject.transform.localRotation = Quaternion.identity;
+
+            ItemInHand = true;
         }
 
         private void AddItemToBackpack(ItemInstance instance)
@@ -96,6 +98,7 @@ namespace YNQ.Dark.InventorySystem
             else
             {
                 AddItemToHand(_backpack[index]);
+                RemoveItemFromBackpack(index);
             }
             
             onBackpackUpdated.Invoke();
@@ -110,11 +113,18 @@ namespace YNQ.Dark.InventorySystem
             Destroy(_activeItemObject.gameObject);
             
             _activeItem = null;
+            ItemInHand = false;
         }
 
         public void DropItemFromHand()
         {
+            if (!ItemInHand)
+                return;
+            
             PlaceItemInTheWorld(_activeItemObject);
+            
+            _activeItem = null;
+            ItemInHand = false;
         }
 
         public void DropItemFromBackpack(int index)
