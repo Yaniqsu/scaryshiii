@@ -8,6 +8,7 @@ namespace YNQ.InteractionSystem
     {
         [SerializeField] private Transform _camera;
         [SerializeField] private float _detectionlength;
+        [SerializeField] private float _interactionlength;
         [SerializeField] private LayerMask _interactableLayer;
 
         public UnityEvent onPhysicsInteractableFound;
@@ -54,8 +55,10 @@ namespace YNQ.InteractionSystem
                     LostInteractable();
                 }
             }
-            else if(_currentInteractable != null)
-                    LostInteractable();
+            else if (_currentInteractable != null)
+            {
+                LostInteractable();
+            }
         }
 
         private void UpdateInteractable()
@@ -63,7 +66,8 @@ namespace YNQ.InteractionSystem
             if (_currentInteractable.Type != InteractionType.Physics)
                 return;
             
-            if(Vector3.Distance(transform.position, _currentInteractableTransform.position) > _detectionlength)
+            if(Vector3.Distance(transform.position, _currentInteractableTransform.position) >
+               (_inInteraction ? _interactionlength : _detectionlength))
             {
                 EndInteraction();
                 LostInteractable();
@@ -106,6 +110,8 @@ namespace YNQ.InteractionSystem
         {
             if (_currentInteractable == null)
                 return;
+            
+            Debug.Log("Interactable lost");
             
             _currentInteractable = null;
             
