@@ -306,7 +306,7 @@ MonoBehaviour:
   _interactionlength: 4
   _interactableLayer:
     serializedVersion: 2
-    m_Bits: 448
+    m_Bits: 1472
   onPhysicsInteractableFound:
     m_PersistentCalls:
       m_Calls: []

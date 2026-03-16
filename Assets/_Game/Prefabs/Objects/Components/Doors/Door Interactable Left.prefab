@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.01
       objectReference: {fileID: 0}
+    - target: {fileID: 9162316818968863949, guid: cab56efc11d37ad44a7e369b5188587d, type: 3}
+      propertyPath: torqueStrength
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
