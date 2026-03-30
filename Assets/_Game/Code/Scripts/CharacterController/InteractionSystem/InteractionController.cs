@@ -14,6 +14,7 @@ namespace YNQ.InteractionSystem
         public UnityEvent onPhysicsInteractableFound;
         public UnityEvent onPickableFound;
         public UnityEvent onInteractableLost;
+        public UnityEvent onInteractableFound;
         
         private IInteractable _currentInteractable;
         private Transform _currentInteractableTransform;
@@ -92,6 +93,9 @@ namespace YNQ.InteractionSystem
                     break;
                 case Pickable:
                     onPickableFound?.Invoke();
+                    break;
+                default: 
+                    onInteractableFound?.Invoke();
                     break;
             }
         }

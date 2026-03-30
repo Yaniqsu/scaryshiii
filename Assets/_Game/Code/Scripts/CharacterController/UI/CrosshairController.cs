@@ -15,6 +15,7 @@ namespace YNQ.Character
             ChangeCrosshair(CrosshairType.Default);
             
             interactionController.onPhysicsInteractableFound.AddListener(() => ChangeCrosshair(CrosshairType.Interact));
+            interactionController.onInteractableFound.AddListener(() => ChangeCrosshair(CrosshairType.Interact));
             interactionController.onPickableFound.AddListener(() => ChangeCrosshair(CrosshairType.PickUp));
             interactionController.onInteractableLost.AddListener(() => ChangeCrosshair(CrosshairType.Default));
         }

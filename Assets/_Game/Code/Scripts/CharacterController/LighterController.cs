@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -22,7 +21,7 @@ namespace YNQ.Player
         private HandController _handController;
         private HandLighter _lighter;
         private Coroutine _lightRoutine;
-        private bool _lighterOn;
+        public bool LighterOn { get; private set; }
         
         public bool Active { get; private set; } = false;
         
@@ -57,7 +56,7 @@ namespace YNQ.Player
 
         public void TryLight()
         {
-            if (_lighterOn)
+            if (LighterOn)
             {
                 HideLighter(0);
                 return;
@@ -93,7 +92,7 @@ namespace YNQ.Player
 
         private void Light()
         {
-            _lighterOn = true;
+            LighterOn = true;
             
             _lighter.Light();
             lighterLight.enabled = true;
@@ -103,7 +102,7 @@ namespace YNQ.Player
 
         private void Extinguish()
         {
-            _lighterOn = false;
+            LighterOn = false;
 
             lighterLight.enabled = false;
             _lightRoutine = null;

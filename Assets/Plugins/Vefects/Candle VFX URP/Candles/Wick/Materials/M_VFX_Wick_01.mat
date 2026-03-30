@@ -41,7 +41,7 @@ Material:
     - _Cull: 2
     - _Dst: 10
     - _EmissiveColor: 1
-    - _EmissiveIntensity: 13
+    - _EmissiveIntensity: 1
     - _EnvironmentReflections: 1
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -60,3 +60,4 @@ Material:
     - _TipColor: {r: 1, g: 0.53587186, b: 0, a: 0}
     - _WickColor: {r: 0.1792453, g: 0.17345406, b: 0.16487186, a: 0}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1
