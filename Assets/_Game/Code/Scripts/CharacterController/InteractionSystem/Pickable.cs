@@ -12,7 +12,7 @@ namespace YNQ.Dark.InventorySystem
         protected virtual void Awake() { }
         
 
-        public abstract void BeginInteraction(Transform player);
+        public abstract void BeginInteraction(InteractionContext context);
 
         public void InteractionUpdate(InteractionContext context) { }
 

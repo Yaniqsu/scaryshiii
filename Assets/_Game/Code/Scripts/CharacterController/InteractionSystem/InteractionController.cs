@@ -73,18 +73,8 @@ namespace YNQ.InteractionSystem
                 LostInteractable();
                 return;
             }
-            
-            InteractionContext context = new InteractionContext
-            {
-                Camera = _mainCamera,
-                Player = transform,
-                Hit = _hit,
-                MouseDelta = MouseDelta,
-                GrabPointWorld = _grabPoint,
-                DeltaTime = Time.deltaTime
-            };
 
-            _currentInteractable.InteractionUpdate(context);
+            _currentInteractable.InteractionUpdate(CreateContext());
         }
 
         private void GetInteractable(IInteractable interactable, Transform interactableTransform)
@@ -111,8 +101,6 @@ namespace YNQ.InteractionSystem
             if (_currentInteractable == null)
                 return;
             
-            Debug.Log("Interactable lost");
-            
             _currentInteractable = null;
             
             onInteractableLost?.Invoke();
@@ -124,7 +112,7 @@ namespace YNQ.InteractionSystem
                 return;
             
             _inInteraction = true;
-            _currentInteractable.BeginInteraction(transform);
+            _currentInteractable.BeginInteraction(CreateContext());
             onInteractionStart?.Invoke();
 
             if (_currentInteractable.Type == InteractionType.Short)
@@ -149,5 +137,16 @@ namespace YNQ.InteractionSystem
             Gizmos.color = Color.crimson;
             Gizmos.DrawRay(_camera.position, _camera.forward * _detectionlength);
         }
+        
+        private InteractionContext CreateContext()
+            => new InteractionContext
+        {
+            Camera = _mainCamera,
+            Player = transform,
+            Hit = _hit,
+            MouseDelta = MouseDelta,
+            GrabPointWorld = _grabPoint,
+            DeltaTime = Time.deltaTime
+        };
     }
 }

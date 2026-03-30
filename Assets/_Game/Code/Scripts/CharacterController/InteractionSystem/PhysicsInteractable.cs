@@ -14,7 +14,7 @@ namespace YNQ.InteractionSystem
             rb = GetComponent<Rigidbody>();
         }
 
-        public abstract void BeginInteraction(Transform player);
+        public abstract void BeginInteraction(InteractionContext context);
         public abstract void InteractionUpdate(InteractionContext context);
         public abstract void EndInteraction();
     }

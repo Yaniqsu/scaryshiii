@@ -8,7 +8,7 @@ namespace YNQ.Movement.States
         
         protected void HandleGroundedTransitions()
         {
-            if (!controller.Character.isGrounded)
+            if (!controller.CharacterController.isGrounded)
             {
                 controller.ChangeState(controller.Air);
                 return;

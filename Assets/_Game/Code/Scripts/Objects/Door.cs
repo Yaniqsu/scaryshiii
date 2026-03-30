@@ -49,12 +49,12 @@ public class Door : PhysicsInteractable
         }
     }
 
-    public override void BeginInteraction(Transform player)
+    public override void BeginInteraction(InteractionContext context)
     {
         _isInteracting = true;
         
         _torqueSign = _checkDotProduct ? 
-            (int)Mathf.Sign(Vector3.Dot(player.forward, rb.transform.forward)): -1;
+            (int)Mathf.Sign(Vector3.Dot(context.Player.forward, rb.transform.forward)): -1;
     }
 
     public override void InteractionUpdate(InteractionContext context)

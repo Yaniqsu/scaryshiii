@@ -6,7 +6,7 @@
 
         public override void Update()
         {
-            if (controller.Character.isGrounded && controller.VerticalVelocity < 0)
+            if (controller.CharacterController.isGrounded && controller.VerticalVelocity < 0)
             {
                 controller.ChangeState(controller.Standing);
                 return;

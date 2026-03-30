@@ -21,7 +21,7 @@ namespace YNQ.Movement
         
         public UnityEvent<AMovementState> OnStateChanged;
 
-        public CharacterController Character { get; private set; }
+        public CharacterController CharacterController { get; private set; }
 
         public Vector2 Input { get; private set; }
         public bool RunHeld { get; private set; }
@@ -41,7 +41,7 @@ namespace YNQ.Movement
 
         private void Awake()
         {
-            Character = GetComponent<CharacterController>();
+            CharacterController = GetComponent<CharacterController>();
 
             Standing = new StandingState(this);
             Walking = new WalkingState(this);
@@ -76,7 +76,7 @@ namespace YNQ.Movement
 
         void ApplyGravity()
         {
-            if (Character.isGrounded && VerticalVelocity < 0f)
+            if (CharacterController.isGrounded && VerticalVelocity < 0f)
                 VerticalVelocity = -2f;
 
             VerticalVelocity += Physics.gravity.y * gravityMultiplier * Time.deltaTime;
@@ -85,7 +85,7 @@ namespace YNQ.Movement
         void MoveCharacter()
         {
             Vector3 velocity = HorizontalVelocity + Vector3.up * VerticalVelocity;
-            Character.Move(velocity * Time.deltaTime);
+            CharacterController.Move(velocity * Time.deltaTime);
         }
 
         public void SetInput(Vector2 input) => Input = input;

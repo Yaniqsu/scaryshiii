@@ -46,11 +46,11 @@ public class Drawer : PhysicsInteractable
         }
     }
 
-    public override void BeginInteraction(Transform player)
+    public override void BeginInteraction(InteractionContext context)
     {
         _isInteracting = true;
         
-        _moveSign = (int)Mathf.Sign(Vector3.Dot(player.forward, -rb.transform.forward));
+        _moveSign = (int)Mathf.Sign(Vector3.Dot(context.Player.forward, -rb.transform.forward));
 
         _rb.isKinematic = false;
     }

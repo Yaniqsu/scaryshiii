@@ -1,7 +1,6 @@
 using System.Collections;
 using Unity.Cinemachine;
 using UnityEngine;
-using UnityEngine.Serialization;
 using YNQ.Movement.States;
 
 namespace YNQ.Movement

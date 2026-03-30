@@ -1,11 +1,18 @@
 using UnityEngine;
-using YNQ.Dark.InventorySystem;
+using YNQ.InteractionSystem;
+using YNQ.Player;
 
-[CreateAssetMenu(fileName = "Lighter Behaviour", menuName = "Scriptable Objects /Behaviours /Lighter")]
-public class Lighter : ItemBehaviour
+public class Lighter : MonoBehaviour, IInteractable
 {
-    public override void Use(ItemInstance instance, GameObject user)
+    public InteractionType Type => InteractionType.Short;
+    
+    public void BeginInteraction(InteractionContext context)
     {
-        
+        if (context.Player.TryGetComponent(out LighterController lighterController))
+            lighterController.Enable();
     }
+
+    public void InteractionUpdate(InteractionContext context) { }
+
+    public void EndInteraction() { }
 }

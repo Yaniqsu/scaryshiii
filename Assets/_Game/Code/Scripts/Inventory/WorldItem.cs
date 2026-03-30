@@ -1,4 +1,5 @@
 using UnityEngine;
+using YNQ.InteractionSystem;
 
 namespace YNQ.Dark.InventorySystem
 {
@@ -20,6 +21,14 @@ namespace YNQ.Dark.InventorySystem
             _collider = GetComponentInChildren<Collider>();
         }
 
+        public override void BeginInteraction(InteractionContext context)
+        {
+            if(context.Player.TryGetComponent(out InventoryController inventoryController))
+            {
+                inventoryController.AddItem(GetItemInstance());
+            }
+        }
+
         public ItemInstance GetItemInstance()
         {
             return _instance;
@@ -35,14 +44,6 @@ namespace YNQ.Dark.InventorySystem
         {
             _rb.isKinematic = true;
             _collider.enabled = false;
-        }
-
-        public override void BeginInteraction(Transform player)
-        {
-            if(player.TryGetComponent(out InventoryController inventoryController))
-            {
-                inventoryController.AddItem(GetItemInstance());
-            }
         }
     }
 }

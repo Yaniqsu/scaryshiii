@@ -15,6 +15,7 @@ namespace YNQ.Player
         [SerializeField] private CameraController _cameraController;
         [SerializeField] private InteractionController _interactionController;
         [SerializeField] private InventoryController _inventoryController;
+        [SerializeField] private LighterController _lighterController;
         
         [Header("Movement")] 
         [SerializeField] private string _moveAction;
@@ -26,6 +27,7 @@ namespace YNQ.Player
         [Header("Inventory")]
         [SerializeField] private string _hideItem;
         [SerializeField] private string _dropItem;
+        [SerializeField] private string _lighter;
         [SerializeField] private string _item1;
         [SerializeField] private string _item2;
         [SerializeField] private string _item3;
@@ -60,6 +62,7 @@ namespace YNQ.Player
             
             _playerInput.actions[_hideItem].started += HideItem;
             _playerInput.actions[_dropItem].started += DropItem;
+            _playerInput.actions[_lighter].started += UserLighter;
             _playerInput.actions[_item1].started += Item1;
             _playerInput.actions[_item2].started += Item2;
             _playerInput.actions[_item3].started += Item3;
@@ -82,6 +85,7 @@ namespace YNQ.Player
             
             _playerInput.actions[_hideItem].started -= HideItem;
             _playerInput.actions[_dropItem].started -= DropItem;
+            _playerInput.actions[_lighter].started -= UserLighter;
             _playerInput.actions[_item1].started -= Item1;
             _playerInput.actions[_item2].started -= Item2;
             _playerInput.actions[_item3].started -= Item3;
@@ -129,6 +133,8 @@ namespace YNQ.Player
         private void HideItem(InputAction.CallbackContext context) => _inventoryController.HideActiveItem();
 
         private void DropItem(InputAction.CallbackContext context) => _inventoryController.DropItemFromHand();
+        
+        private void UserLighter(InputAction.CallbackContext context) => _lighterController.TryLight();
 
         private void Item1(InputAction.CallbackContext context) => _inventoryController.SwitchActiveItem(0);   
         private void Item2(InputAction.CallbackContext context) => _inventoryController.SwitchActiveItem(1);   

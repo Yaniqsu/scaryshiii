@@ -6,7 +6,7 @@ namespace YNQ.InteractionSystem
     {
         public InteractionType Type { get; }
         
-        void BeginInteraction(Transform player);
+        void BeginInteraction(InteractionContext context);
         void InteractionUpdate(InteractionContext context);
         void EndInteraction();
     }
