@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 2568284237656776932}
   - component: {fileID: 5844185839298532965}
   m_Layer: 6
-  m_Name: Interactable_Candles
+  m_Name: Interactable_Candles_Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
