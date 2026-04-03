@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class HandController : MonoBehaviour
 {
+    private static readonly int Visible = Animator.StringToHash("Visible");
+
     private enum HandState
     {
         Free = 0,
@@ -11,7 +13,7 @@ public class HandController : MonoBehaviour
     
     [SerializeField] private Transform handsHolder;
     [SerializeField] private new Transform camera;
-    [SerializeField] private Transform[] hands;
+    [SerializeField] private Animator[] hands;
     [SerializeField] private float followSpeed;
     [SerializeField] private float xLagAmount;
     [SerializeField] private float yLagAmount;
@@ -27,7 +29,6 @@ public class HandController : MonoBehaviour
         for (var i = 0; i < _handStates.Length; i++)
         {
             _handStates[i] = HandState.Free;
-            hands[i].gameObject.SetActive(false);
         }
 
         _lastCameraPos = transform.position;
@@ -90,7 +91,7 @@ public class HandController : MonoBehaviour
             return;
 
         _handStates[index] = HandState.ItemHidden;
-        item.transform.SetParent(hands[index]);
+        item.transform.SetParent(hands[index].transform);
         item.transform.localPosition = Vector3.zero;
         
         if(showOnStart)
@@ -103,6 +104,6 @@ public class HandController : MonoBehaviour
             return;
         
         _handStates[index] = visible ? HandState.ItemVisible : HandState.ItemHidden;
-        hands[index].gameObject.SetActive(visible);
+        hands[index].SetBool(Visible, visible);
     }
 }
