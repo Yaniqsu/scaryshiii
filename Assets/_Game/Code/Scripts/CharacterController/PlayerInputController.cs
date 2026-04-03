@@ -37,6 +37,7 @@ namespace YNQ.Player
         [SerializeField] private string _interactionAction;
         
         private InputAction _moveActionRef;
+        private Vector2 _rotationDelta;
 
         private void Start()
         {
@@ -69,6 +70,7 @@ namespace YNQ.Player
             _playerInput.actions[_item4].started += Item4;
             
             _playerInput.actions[_rotateAction].performed += OnRotate;
+            _playerInput.actions[_rotateAction].canceled += CancelRotation;
             
             _playerInput.actions.Enable();
         }
@@ -92,6 +94,7 @@ namespace YNQ.Player
             _playerInput.actions[_item4].started -= Item4;
             
             _playerInput.actions[_rotateAction].performed -= OnRotate;
+            _playerInput.actions[_rotateAction].canceled -= CancelRotation;
             
             _playerInput.actions.Disable();
         }
@@ -99,6 +102,7 @@ namespace YNQ.Player
         private void Update()
         {
             _movementController.SetInput(_moveActionRef.ReadValue<Vector2>());
+            _cameraController.Rotate(_rotationDelta);
         }
 
         #region MOVEMENT
@@ -120,10 +124,14 @@ namespace YNQ.Player
 
         private void OnRotate(InputAction.CallbackContext context)
         {
-            var mouseDelta = context.ReadValue<Vector2>();
+            _rotationDelta = context.ReadValue<Vector2>();
             
-            _cameraController.Rotate(mouseDelta);
-            _interactionController.MouseDelta = mouseDelta;
+            _interactionController.MouseDelta = _rotationDelta;
+        }
+
+        private void CancelRotation(InputAction.CallbackContext context)
+        {
+            _rotationDelta = Vector2.zero;
         }
 
         #endregion
