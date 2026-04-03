@@ -7,9 +7,10 @@ public class HandLighter : MonoBehaviour
     [SerializeField] private AudioSource lightSource;
     [SerializeField] private AudioSource extinguishSource;
 
-    public void TryLight()
+    public void TryLight(int attempts)
     {
         clickSource.Play();
+        clickSource.volume = 0.2f + attempts * 0.1f;
     }
     
     public void Light()

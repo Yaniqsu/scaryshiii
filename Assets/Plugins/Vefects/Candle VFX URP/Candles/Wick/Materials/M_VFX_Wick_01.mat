@@ -41,7 +41,7 @@ Material:
     - _Cull: 2
     - _Dst: 10
     - _EmissiveColor: 1
-    - _EmissiveIntensity: 1
+    - _EmissiveIntensity: 0
     - _EnvironmentReflections: 1
     - _QueueControl: 0
     - _QueueOffset: 0

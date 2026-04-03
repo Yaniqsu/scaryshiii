@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 908458607022144506, guid: 3940199ca3102c44d8ae0f31b4107728, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.063
+      objectReference: {fileID: 0}
     - target: {fileID: 971948729433989412, guid: 3940199ca3102c44d8ae0f31b4107728, type: 3}
       propertyPath: fireParticles.Array.size
       value: 8

@@ -354,6 +354,9 @@ MonoBehaviour:
   onInteractableLost:
     m_PersistentCalls:
       m_Calls: []
+  onInteractableFound:
+    m_PersistentCalls:
+      m_Calls: []
   onInteractionStart:
     m_PersistentCalls:
       m_Calls:
@@ -448,7 +451,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68dd5ab1e23b408aaf6aff86406710ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::YNQ.Player.LighterController
-  lightChance: 60
+  lightChance: 10
+  lightChanceIncrease: 10
   lighterPrefab: {fileID: 634770561434629311, guid: 7c0cd7489121018418ca67b6a593593e, type: 3}
   lighterLight: {fileID: 841377783826334474}
   didLightHideTime: 20

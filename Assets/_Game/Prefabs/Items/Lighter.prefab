@@ -43,7 +43,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: eaeb42da9ce4c2a4f8a567d8641459f1, type: 3}
+  m_Resource: {fileID: 8300000, guid: 280facff0e7e77641a8289c96dd78278, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -309,7 +309,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HandLighter
   fireParticles: {fileID: 667221236161532861}
-  light: {fileID: 0}
   clickSource: {fileID: 7107728918740121165}
   lightSource: {fileID: 7994884099383368109}
   extinguishSource: {fileID: 7358825650845899492}

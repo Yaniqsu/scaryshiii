@@ -7,6 +7,7 @@ namespace YNQ.Player
     public class LighterController : MonoBehaviour
     {
         [SerializeField, Range(0, 100)] private float lightChance;
+        [SerializeField] private float lightChanceIncrease;
         [SerializeField] private HandLighter lighterPrefab;
         [SerializeField] private Light lighterLight;
         [SerializeField] private float didLightHideTime;
@@ -21,6 +22,8 @@ namespace YNQ.Player
         private HandController _handController;
         private HandLighter _lighter;
         private Coroutine _lightRoutine;
+        private int _attempts;
+        
         public bool LighterOn { get; private set; }
         
         public bool Active { get; private set; } = false;
@@ -29,7 +32,6 @@ namespace YNQ.Player
         private void Awake()
         {
             _handController = GetComponent<HandController>();
-
         }
 
         private void Start()
@@ -63,12 +65,15 @@ namespace YNQ.Player
             }
             
             _handController.ToggleLeftHand(true);
-            _lighter.TryLight();
+            _lighter.TryLight(_attempts);
             
-            if (Random.Range(0, 100) < lightChance)
+            if (Random.Range(0, 100) < lightChance + _attempts * lightChanceIncrease)
                 Light();
             else
+            {
                 HideLighter(didntLightHideTime);
+                _attempts++;
+            }
         }
 
         private void HideLighter(float delayTime)
@@ -93,6 +98,7 @@ namespace YNQ.Player
         private void Light()
         {
             LighterOn = true;
+            _attempts = 0;
             
             _lighter.Light();
             lighterLight.enabled = true;
