@@ -7,6 +7,7 @@ namespace YNQ.Dark.InventorySystem
     public abstract class Pickable : MonoBehaviour, IInteractable
     {
         public InteractionType Type => InteractionType.Short;
+        public InteractionTag Tag => InteractionTag.Pickable;
         
 
         protected virtual void Awake() { }

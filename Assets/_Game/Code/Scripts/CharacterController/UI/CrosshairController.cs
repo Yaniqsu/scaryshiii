@@ -12,17 +12,15 @@ namespace YNQ.Character
 
         private void Start()
         {
-            ChangeCrosshair(CrosshairType.Default);
+            crosshair.sprite = data.DefaultSprite;
             
-            interactionController.onPhysicsInteractableFound.AddListener(() => ChangeCrosshair(CrosshairType.Interact));
-            interactionController.onInteractableFound.AddListener(() => ChangeCrosshair(CrosshairType.Interact));
-            interactionController.onPickableFound.AddListener(() => ChangeCrosshair(CrosshairType.PickUp));
-            interactionController.onInteractableLost.AddListener(() => ChangeCrosshair(CrosshairType.Default));
+            interactionController.onInteractableFound.AddListener(i => ChangeCrosshair(i.Tag));
+            interactionController.onInteractableLost.AddListener(() => crosshair.sprite = data.DefaultSprite);
         }
 
-        public void ChangeCrosshair(CrosshairType type)
+        public void ChangeCrosshair(InteractionTag interactionTag)
         {
-            crosshair.sprite = data.GetSprite(type);
+            crosshair.sprite = data.GetSprite(interactionTag);
         }
     }
 }

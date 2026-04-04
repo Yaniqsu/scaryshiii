@@ -5,6 +5,7 @@ using YNQ.Player;
 public class Lighter : MonoBehaviour, IInteractable
 {
     public InteractionType Type => InteractionType.Short;
+    public InteractionTag Tag => InteractionTag.Pickable;
     
     public void BeginInteraction(InteractionContext context)
     {

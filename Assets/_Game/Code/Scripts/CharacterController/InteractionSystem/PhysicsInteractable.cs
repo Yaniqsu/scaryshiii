@@ -6,6 +6,7 @@ namespace YNQ.InteractionSystem
     public abstract class PhysicsInteractable : MonoBehaviour, IInteractable
     {
         public InteractionType Type => InteractionType.Physics;
+        public InteractionTag Tag => InteractionTag.Psychics;
         
         protected Rigidbody rb;
 

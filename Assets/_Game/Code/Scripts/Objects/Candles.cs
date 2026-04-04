@@ -13,6 +13,7 @@ public class Candles : MonoBehaviour, IInteractable
     private bool _on;
     
     public InteractionType Type => InteractionType.Short;
+    public InteractionTag Tag => InteractionTag.Candles;
     
     public void BeginInteraction(InteractionContext context)
     {
