@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using YNQ.Dark.InventorySystem;
@@ -22,6 +23,7 @@ namespace YNQ.InteractionSystem
         private Camera _mainCamera;
         private Vector3 _grabPoint;
         private RaycastHit _hit;
+        private HashSet<InteractionTag> _activeTags;
         
         public Vector2 MouseDelta {get; set;}
         
@@ -32,8 +34,15 @@ namespace YNQ.InteractionSystem
         private void Start()
         {
             _mainCamera = Camera.main;
+            
+            _activeTags = new HashSet<InteractionTag>( new[]
+            {
+                InteractionTag.Default,
+                InteractionTag.Psychics,
+                InteractionTag.Pickable
+            });
         }
-
+        
         private void LateUpdate()
         {
             if(_inInteraction)
@@ -49,7 +58,9 @@ namespace YNQ.InteractionSystem
             if (Physics.SphereCast(_camera.position, 0.05f, _camera.forward, out _hit, _detectionlength,
                     _interactableLayer))
             {
-                if(_hit.rigidbody && _hit.rigidbody.TryGetComponent(out IInteractable interactable))
+                if(_hit.rigidbody && 
+                   _hit.rigidbody.TryGetComponent(out IInteractable interactable) &&
+                   _activeTags.Contains(interactable.Tag))
                     GetInteractable(interactable, _hit.transform);
                 else
                 {
@@ -82,7 +93,7 @@ namespace YNQ.InteractionSystem
         {
             if (_currentInteractable == interactable)
                 return;
-            
+
             _currentInteractable = interactable;
             _currentInteractableTransform = interactableTransform;
             
@@ -123,6 +134,16 @@ namespace YNQ.InteractionSystem
             
             _inInteraction = false;
             onInteractionEnd?.Invoke();
+        }
+
+        public void AddInteractionTag(InteractionTag interactionTag)
+        {
+            _activeTags.Add(interactionTag);
+        }
+
+        public void RemoveInteractionTag(InteractionTag interactionTag)
+        {
+            _activeTags.Remove(interactionTag);
         }
 
         private void OnDrawGizmos()

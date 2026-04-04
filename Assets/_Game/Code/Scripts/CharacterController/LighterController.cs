@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using YNQ.InteractionSystem;
 using Random = UnityEngine.Random;
 
 namespace YNQ.Player
@@ -20,6 +21,7 @@ namespace YNQ.Player
         [SerializeField] private bool enableBeDefault;
 
         private HandController _handController;
+        private InteractionController _interactionController;
         private HandLighter _lighter;
         private Coroutine _lightRoutine;
         private int _attempts;
@@ -32,6 +34,7 @@ namespace YNQ.Player
         private void Awake()
         {
             _handController = GetComponent<HandController>();
+            _interactionController = GetComponent<InteractionController>();
         }
 
         private void Start()
@@ -97,6 +100,8 @@ namespace YNQ.Player
 
         private void Light()
         {
+            _interactionController.AddInteractionTag(InteractionTag.Candles);
+            
             LighterOn = true;
             _attempts = 0;
             
@@ -108,6 +113,8 @@ namespace YNQ.Player
 
         private void Extinguish()
         {
+            _interactionController.RemoveInteractionTag(InteractionTag.Candles);
+            
             LighterOn = false;
 
             lighterLight.enabled = false;

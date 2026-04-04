@@ -15,8 +15,12 @@ MonoBehaviour:
   defaultSprite: {fileID: 21300000, guid: 7fa7752f7f2a3fc4fbc2bcaea5671e2d, type: 3}
   data:
   - item1: 0
-    item2: {fileID: 21300000, guid: 7fa7752f7f2a3fc4fbc2bcaea5671e2d, type: 3}
+    item2: {fileID: 21300000, guid: 2aa2c34acf2555342aba9f78ec7556d0, type: 3}
   - item1: 1
     item2: {fileID: 21300000, guid: 8bc51f8178c786144b6138efb74721c0, type: 3}
   - item1: 2
+    item2: {fileID: 21300000, guid: 2aa2c34acf2555342aba9f78ec7556d0, type: 3}
+  - item1: 3
+    item2: {fileID: 21300000, guid: 2aa2c34acf2555342aba9f78ec7556d0, type: 3}
+  - item1: 4
     item2: {fileID: 21300000, guid: 2aa2c34acf2555342aba9f78ec7556d0, type: 3}

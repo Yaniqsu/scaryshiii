@@ -11,10 +11,10 @@ public class Candles : MonoBehaviour, IInteractable
     [SerializeField] private AudioSource flameAudio;
 
     private bool _on;
-    
+
     public InteractionType Type => InteractionType.Short;
-    public InteractionTag Tag => InteractionTag.Candles;
-    
+    public InteractionTag Tag { private set; get; } = InteractionTag.Candles;
+
     public void BeginInteraction(InteractionContext context)
     {
         if(_on)
@@ -36,6 +36,7 @@ public class Candles : MonoBehaviour, IInteractable
         igniteAudio.Play();
         flameAudio.Play();
         _on = true;
+        Tag = InteractionTag.Default;
         
         foreach (var fireParticle in fireParticles)
         {
@@ -49,6 +50,7 @@ public class Candles : MonoBehaviour, IInteractable
         extinguishAudio.Play();
         flameAudio.Stop();
         _on = false;
+        Tag = InteractionTag.Candles;
         
         foreach (var fireParticle in fireParticles)
         {
