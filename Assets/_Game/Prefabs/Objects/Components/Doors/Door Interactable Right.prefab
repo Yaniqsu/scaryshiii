@@ -36,6 +36,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door Interactable Right
       objectReference: {fileID: 0}
+    - target: {fileID: 5865267007872863860, guid: cab56efc11d37ad44a7e369b5188587d, type: 3}
+      propertyPath: m_Name
+      value: Mesh
+      objectReference: {fileID: 0}
     - target: {fileID: 6363363266176791057, guid: cab56efc11d37ad44a7e369b5188587d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.467
@@ -101,7 +105,8 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 140893704267958233, guid: cab56efc11d37ad44a7e369b5188587d, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cab56efc11d37ad44a7e369b5188587d, type: 3}

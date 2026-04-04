@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 140893704267958233, guid: cab56efc11d37ad44a7e369b5188587d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4668814321854854268, guid: cab56efc11d37ad44a7e369b5188587d, type: 3}
       propertyPath: m_Name
       value: Door Interactable Left
