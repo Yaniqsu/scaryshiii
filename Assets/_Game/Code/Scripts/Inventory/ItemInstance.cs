@@ -15,5 +15,8 @@ namespace YNQ.Dark.InventorySystem
         {
             ItemData.behaviour.Use(this, user);
         }
+        
+        public void OnShow(GameObject user) => ItemData.behaviour.OnShow(this, user);
+        public void OnHide(GameObject user) => ItemData.behaviour.OnHide(this, user);
     }
 }

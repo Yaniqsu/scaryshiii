@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4402c8385a2fb1c4ea2a73610e1c3923, type: 3}
+  m_Name: Key 1
+  m_EditorClassIdentifier: Assembly-CSharp::YNQ.Dark.InventorySystem.ItemData
+  itemID: Key 1
+  itemName: Key 1
+  itemSprite: {fileID: 0}
+  itemType: 0
+  behaviour: {fileID: 11400000, guid: c250796a5a8eec545a0d3e840ecec228, type: 2}
+  itemPrefab: {fileID: 3528723141049704355, guid: 330c38e5614b99141b603aa51096dccb, type: 3}

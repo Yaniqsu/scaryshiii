@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -10,8 +11,9 @@ namespace YNQ.Dark.InventorySystem
         [SerializeField] private int maxItems;
 
         private readonly List<ItemInstance> _backpack = new ();
-        private ItemInstance _activeItem;
+        public ItemInstance ActiveItem { get; private set; }
         private WorldItem _activeItemObject;
+        private HandController _handController;
         private int _currentItemsCount;
         
         public bool ItemInHand { get; private set; }
@@ -21,6 +23,11 @@ namespace YNQ.Dark.InventorySystem
         public UnityEvent onBackpackUpdated;
         public UnityEvent onInventoryOpen;
         public UnityEvent onInventoryClose;
+
+        private void Awake()
+        {
+            _handController = GetComponent<HandController>();
+        }
 
         public void AddItem(ItemInstance instance)
         {
@@ -42,18 +49,17 @@ namespace YNQ.Dark.InventorySystem
             if (!ItemInHand)
                 return;
             
-            _activeItem.Use(gameObject);
+            ActiveItem.Use(gameObject);
         }
 
         private void AddItemToHand(ItemInstance data)
         {
-            _activeItem = data;
+            ActiveItem = data;
 
             _activeItemObject = Instantiate(data.ItemData.itemPrefab, hand);
             _activeItemObject.SetAsInHand();
-            
-            _activeItemObject.transform.localPosition = Vector3.zero;
-            _activeItemObject.transform.localRotation = Quaternion.identity;
+            _handController.OccupyRightHand(_activeItemObject.gameObject);
+            ActiveItem.OnShow(gameObject);
 
             ItemInHand = true;
         }
@@ -91,7 +97,7 @@ namespace YNQ.Dark.InventorySystem
             {
                 Destroy(_activeItemObject.gameObject);
                 
-                var temp = _activeItem;
+                var temp = ActiveItem;
                 AddItemToHand(_backpack[index]);
                 _backpack[index] = temp;
             }
@@ -106,24 +112,23 @@ namespace YNQ.Dark.InventorySystem
 
         public void HideActiveItem()
         {
-            if (_activeItem == null || _currentItemsCount == maxItems)
+            if (ActiveItem == null || _currentItemsCount == maxItems)
                 return;
             
-            AddItemToBackpack(_activeItem);
-            Destroy(_activeItemObject.gameObject);
-            
-            _activeItem = null;
-            ItemInHand = false;
+            AddItemToBackpack(ActiveItem);
+            DestroyItemInHand();
         }
 
         public void DropItemFromHand()
         {
             if (!ItemInHand)
                 return;
-            
+
+            _handController.FreeRightHand();
             PlaceItemInTheWorld(_activeItemObject);
+            ActiveItem.OnHide(gameObject);
             
-            _activeItem = null;
+            ActiveItem = null;
             ItemInHand = false;
         }
 
@@ -134,6 +139,16 @@ namespace YNQ.Dark.InventorySystem
             PlaceItemInTheWorld(Instantiate(item.ItemData.itemPrefab, hand));
             
             RemoveItemFromBackpack(index);
+        }
+
+        public void DestroyItemInHand()
+        {
+            _handController.FreeRightHand();
+            ActiveItem.OnHide(gameObject);
+            Destroy(_activeItemObject);
+            
+            ActiveItem = null;
+            ItemInHand = false;
         }
 
         private static void PlaceItemInTheWorld(WorldItem item)
