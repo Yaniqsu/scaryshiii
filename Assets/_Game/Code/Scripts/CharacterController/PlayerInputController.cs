@@ -16,7 +16,7 @@ namespace YNQ.Player
         [SerializeField] private InteractionController _interactionController;
         [SerializeField] private InventoryController _inventoryController;
         [SerializeField] private LighterController _lighterController;
-        
+
         [Header("Movement")] 
         [SerializeField] private string _moveAction;
         [SerializeField] private string _runAction;
@@ -38,6 +38,8 @@ namespace YNQ.Player
         
         private InputAction _moveActionRef;
         private Vector2 _rotationDelta;
+        
+        public Vector2 MousePos { get; private set; }
 
         private void Start()
         {
@@ -47,7 +49,7 @@ namespace YNQ.Player
         }
 
         private void OnDestroy()
-        {
+        { 
             DisableInput();
         }
 
@@ -103,6 +105,8 @@ namespace YNQ.Player
         {
             _movementController.SetInput(_moveActionRef.ReadValue<Vector2>());
             _cameraController.Rotate(_rotationDelta);
+            MousePos = Mouse.current.position.ReadValue();
+            _interactionController.MousePos = MousePos;
         }
 
         #region MOVEMENT

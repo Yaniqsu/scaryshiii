@@ -10,6 +10,7 @@ namespace YNQ.InteractionSystem
         public RaycastHit Hit;
 
         public Vector2 MouseDelta;
+        public Vector2 MousePos;
         public Vector3 GrabPointWorld;
 
         public float DeltaTime;

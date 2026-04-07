@@ -5,14 +5,22 @@ using YNQ.InteractionSystem;
 [RequireComponent(typeof(HingeJoint))]
 public class Door : PhysicsInteractable
 {
-    [SerializeField] private AudioSource _openDoorSource;
-    [SerializeField] private AudioSource _closeDoorSource;
-    [SerializeField] private AudioSource _squeakSource;
+    [Header("Main Settings")]
+    [SerializeField] private bool locked;
+    
+    [Header("Interaction settings")]
     [SerializeField] private bool _checkDotProduct;
     [SerializeField] private float _angleTreshold = 0.1f;
+    [SerializeField] private float lockTreshold = 0.3f;
+    [SerializeField] private float blockadeAngle = 0.5f;
     [SerializeField] private float torqueStrength = 150f;
     [SerializeField] private float maxTorque = 300f;
     [SerializeField] private float mouseSensitivity = 2f;
+    
+    [Header("Components")]
+    [SerializeField] private AudioSource _openDoorSource;
+    [SerializeField] private AudioSource _closeDoorSource;
+    [SerializeField] private AudioSource _squeakSource;
 
     private HingeJoint _hinge;
 
@@ -31,6 +39,7 @@ public class Door : PhysicsInteractable
         _hinge = GetComponent<HingeJoint>();
         
         _hingeAxisWorld = transform.TransformDirection(_hinge.axis);
+        ToggleLocked(locked);
     }
     
     private void Update()
@@ -78,9 +87,9 @@ public class Door : PhysicsInteractable
         
         rb.AddTorque(_hingeAxisWorld * torqueAmount, ForceMode.Force);
         
-        if(_hinge.angle > _angleTreshold && _doorClosed)
+        if(_hinge.angle > _angleTreshold)
             OpenDoor();
-        else if((float.IsNaN(_hinge.angle) || _hinge.angle < _angleTreshold) && !_doorClosed)
+        else if(float.IsNaN(_hinge.angle) || _hinge.angle < _angleTreshold)
             CloseDoor();
     }
 
@@ -91,6 +100,9 @@ public class Door : PhysicsInteractable
 
     private void CloseDoor()
     {
+        if (_doorClosed)
+            return;
+        
         _doorClosed = true;
         
         var speed = rb.angularVelocity.magnitude;
@@ -100,7 +112,23 @@ public class Door : PhysicsInteractable
 
     private void OpenDoor()
     {
+        if (!_doorClosed)
+            return;
+        
         _doorClosed = false;
         _openDoorSource.Play();
+    }
+
+    public void ToggleLocked(bool locked)
+    {
+        if (float.IsNaN(_hinge.angle) || _hinge.angle <= lockTreshold)
+        {
+            this.locked = locked;
+        }
+        
+        var limits = _hinge.limits;
+        limits.max = this.locked ? lockTreshold : 120;
+        limits.min = locked && !float.IsNaN(_hinge.angle) && _hinge.angle > lockTreshold ? blockadeAngle : 0;
+        _hinge.limits = limits;
     }
 }

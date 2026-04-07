@@ -422,6 +422,7 @@ MonoBehaviour:
   _interactionController: {fileID: 5616853881846074249}
   _inventoryController: {fileID: 6299648001116615029}
   _lighterController: {fileID: 8229935564135575479}
+  _mouse: Mouse
   _moveAction: Move
   _runAction: Sprint
   _rotateAction: Look
@@ -887,7 +888,7 @@ MeshRenderer:
   m_SmallMeshCulling: 1
   m_ForceMeshLod: -1
   m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 0
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 57d7f1c58ef520b41be975568b18d990, type: 2}
@@ -1349,7 +1350,7 @@ Transform:
   m_GameObject: {fileID: 7922731123204063676}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

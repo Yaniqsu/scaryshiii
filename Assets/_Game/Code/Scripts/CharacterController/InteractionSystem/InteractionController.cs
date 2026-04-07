@@ -26,6 +26,7 @@ namespace YNQ.InteractionSystem
         private HashSet<InteractionTag> _activeTags;
         
         public Vector2 MouseDelta {get; set;}
+        public Vector2 MousePos { get; set; }
         
         public UnityEvent onInteractionStart;
         public UnityEvent onInteractionEnd;
@@ -159,6 +160,7 @@ namespace YNQ.InteractionSystem
             Player = transform,
             Hit = _hit,
             MouseDelta = MouseDelta,
+            MousePos = MousePos,
             GrabPointWorld = _grabPoint,
             DeltaTime = Time.deltaTime
         };

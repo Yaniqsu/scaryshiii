@@ -145,7 +145,7 @@ namespace YNQ.Dark.InventorySystem
         {
             _handController.FreeRightHand();
             ActiveItem.OnHide(gameObject);
-            Destroy(_activeItemObject);
+            Destroy(_activeItemObject.gameObject);
             
             ActiveItem = null;
             ItemInHand = false;

@@ -1,23 +1,40 @@
 using UnityEngine;
+using UnityEngine.Events;
 using YNQ.InteractionSystem;
 
-public class LockKey : MonoBehaviour, IInteractable
+public class LockKey : ACircularMotionObject
 {
-    public InteractionType Type => InteractionType.Physics;
-    public InteractionTag Tag => InteractionTag.Default;
+    [SerializeField] private float unlockedValue;
     
-    public void BeginInteraction(InteractionContext context)
-    {
-        throw new System.NotImplementedException();
-    }
+    public override InteractionTag Tag => InteractionTag.Default;
 
-    public void InteractionUpdate(InteractionContext context)
-    {
-        throw new System.NotImplementedException();
-    }
+    public UnityEvent<float> onKeyMove;
+    public UnityEvent onDoorLocked;
+    public UnityEvent onDoorUnlocked;
 
-    public void EndInteraction()
+    private bool _locked = true;
+    
+    
+    protected override void OnRotate(Vector3 rotation)
     {
-        throw new System.NotImplementedException();
+        var z = rotation.z;
+        var min = rotationLimits.x;
+        var max = rotationLimits.y;
+        var t = Mathf.Abs(unlockedValue - Mathf.InverseLerp(min, max, z));
+        
+        onKeyMove.Invoke(t);
+        Debug.Log($"t: {t}");
+
+        switch (t)
+        {
+            case <= 0.1f when _locked:
+                _locked = false;
+                onDoorUnlocked.Invoke();
+                break;
+            case > 0.1f when !_locked:
+                _locked = true;
+                onDoorLocked.Invoke();
+                break;
+        }
     }
 }
