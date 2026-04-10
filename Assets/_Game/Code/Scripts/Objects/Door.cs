@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using YNQ.InteractionSystem;
 
@@ -16,11 +17,14 @@ public class Door : PhysicsInteractable
     [SerializeField] private float torqueStrength = 150f;
     [SerializeField] private float maxTorque = 300f;
     [SerializeField] private float mouseSensitivity = 2f;
-    
-    [Header("Components")]
+
+    [Header("Components")] 
+    [SerializeField] private DoorLock doorLock;
     [SerializeField] private AudioSource _openDoorSource;
     [SerializeField] private AudioSource _closeDoorSource;
     [SerializeField] private AudioSource _squeakSource;
+    [SerializeField] private AudioSource _lockSource;
+    [SerializeField] private AudioSource _unlockSource;
 
     private HingeJoint _hinge;
 
@@ -39,9 +43,14 @@ public class Door : PhysicsInteractable
         _hinge = GetComponent<HingeJoint>();
         
         _hingeAxisWorld = transform.TransformDirection(_hinge.axis);
-        ToggleLocked(locked);
+        SetLockedLimits(locked);
     }
-    
+
+    private void Start()
+    {
+        doorLock.ToggleLock(!locked);
+    }
+
     private void Update()
     {
         var speed = rb.angularVelocity.magnitude;
@@ -124,8 +133,18 @@ public class Door : PhysicsInteractable
         if (float.IsNaN(_hinge.angle) || _hinge.angle <= lockTreshold)
         {
             this.locked = locked;
+
+            if (this.locked)
+                _lockSource.Play();
+            else
+                _unlockSource.Play();
         }
         
+        SetLockedLimits(locked);
+    }
+
+    private void SetLockedLimits(bool locked)
+    {
         var limits = _hinge.limits;
         limits.max = this.locked ? lockTreshold : 120;
         limits.min = locked && !float.IsNaN(_hinge.angle) && _hinge.angle > lockTreshold ? blockadeAngle : 0;

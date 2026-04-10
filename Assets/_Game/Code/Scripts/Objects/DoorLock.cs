@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using YNQ.Dark.InventorySystem;
 using YNQ.InteractionSystem;
@@ -11,6 +10,7 @@ public class DoorLock : MonoBehaviour, IInteractable
     [SerializeField] private Transform blockade;
     [SerializeField] private Vector3 blockadePosMin;
     [SerializeField] private Vector3 blockadePosMax;
+    [SerializeField] private AudioSource insertAudio;
 
     private Collider _collider;
     
@@ -22,6 +22,13 @@ public class DoorLock : MonoBehaviour, IInteractable
         _collider = GetComponent<Collider>();
     }
 
+    public void ToggleLock(bool open)
+    {
+        _keyBack.ForceRotation(open);
+        _keyFront.ForceRotation(open);
+        MoveBlockade(open ? 0 : 1);
+    }
+
     public void BeginInteraction(InteractionContext context)
     {
         if (context.Player.TryGetComponent(out InventoryController inventoryController) &&
@@ -30,6 +37,8 @@ public class DoorLock : MonoBehaviour, IInteractable
             inventoryController.DestroyItemInHand();
             _collider.enabled = false;
             enabled = false;
+            
+            insertAudio.Play();
             
             if(Vector3.Dot(transform.forward, context.Player.forward) > 0)
                 _keyFront.gameObject.SetActive(true);

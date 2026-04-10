@@ -15,7 +15,7 @@ namespace YNQ.InteractionSystem
         public InteractionType Type => InteractionType.Physics;
         public abstract InteractionTag Tag { get; }
 
-        private Vector3 _rotation;
+        protected Vector3 rotation;
 
         private Queue<Vector2> _points = new();
         private int _maxPoints = 100;
@@ -27,13 +27,17 @@ namespace YNQ.InteractionSystem
 
         private void Awake()
         {
-            _rotation = transform.localEulerAngles;
+            if (rotationLimits.x > rotationLimits.y)
+            {
+                (rotationLimits.x, rotationLimits.y) = (rotationLimits.y, rotationLimits.x);
+            }
         }
 
 
         public void BeginInteraction(InteractionContext context)
         {
             _hasLastDir = false;
+            _points.Clear();
         }
 
         public void InteractionUpdate(InteractionContext context)
@@ -49,6 +53,7 @@ namespace YNQ.InteractionSystem
             {
                 _lastMouseDir = currentDir;
                 _hasLastDir = true;
+                OnRotationBegin();
                 return;
             }
 
@@ -68,19 +73,30 @@ namespace YNQ.InteractionSystem
                 maxTorque
             ) * torqueSign;
 
-            _rotation += rotationAxis * torqueAmount;
+            if (Mathf.Abs(torqueAmount) <= 0.01f)
+            {
+                OnRotationEnd();
+                _hasLastDir = false;
+                return;
+            }
+            
+            rotation += rotationAxis * torqueAmount;
+            var localRotation = transform.localEulerAngles;
 
             var finalRotation = new Vector3(
-                Mathf.Clamp(_rotation.x, rotationLimits.x, rotationLimits.y),
-                Mathf.Clamp(_rotation.y, rotationLimits.x, rotationLimits.y),
-                Mathf.Clamp(_rotation.z, rotationLimits.x, rotationLimits.y));
+                rotationAxis.x == 0 ? localRotation.x : Mathf.Clamp(rotation.x, rotationLimits.x, rotationLimits.y),
+                rotationAxis.y == 0 ? localRotation.y : Mathf.Clamp(rotation.y, rotationLimits.x, rotationLimits.y),
+                rotationAxis.z == 0 ? localRotation.z : Mathf.Clamp(rotation.z, rotationLimits.x, rotationLimits.y));
 
             transform.localRotation = Quaternion.Euler(finalRotation);
-            OnRotate(finalRotation);
+            rotation = finalRotation;
+            
+            OnRotate();
         }
 
         public void EndInteraction()
         {
+            OnRotationEnd();
         }
 
         private static Vector2 EstimateCenter(Vector2[] points)
@@ -90,6 +106,8 @@ namespace YNQ.InteractionSystem
             return sum / points.Length;
         }
 
-        protected abstract void OnRotate(Vector3 rotation);
+        protected abstract void OnRotate();
+        protected abstract void OnRotationBegin();
+        protected abstract void OnRotationEnd();
     }
 }

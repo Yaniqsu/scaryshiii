@@ -422,7 +422,6 @@ MonoBehaviour:
   _interactionController: {fileID: 5616853881846074249}
   _inventoryController: {fileID: 6299648001116615029}
   _lighterController: {fileID: 8229935564135575479}
-  _mouse: Mouse
   _moveAction: Move
   _runAction: Sprint
   _rotateAction: Look
@@ -566,8 +565,8 @@ MonoBehaviour:
   lighterLight: {fileID: 841377783826334474}
   didLightHideTime: 20
   didntLightHideTime: 3
-  lightIntensityMin: 1.2
-  lightIntensityMax: 1.5
+  lightIntensityMin: 1.7
+  lightIntensityMax: 2
   animationTime: 4
   enableBeDefault: 1
 --- !u!54 &8754273073075143901
@@ -697,8 +696,8 @@ Camera:
   m_GameObject: {fileID: 3460323928628014556}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1367,8 +1366,8 @@ Light:
   serializedVersion: 12
   m_Type: 2
   m_Color: {r: 0.7264151, g: 0.38374752, b: 0.18160377, a: 1}
-  m_Intensity: 1.8
-  m_Range: 8
+  m_Intensity: 3
+  m_Range: 15
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize2D: {x: 0.5, y: 0.5}

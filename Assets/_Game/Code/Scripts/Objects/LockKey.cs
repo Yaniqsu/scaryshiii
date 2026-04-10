@@ -5,6 +5,7 @@ using YNQ.InteractionSystem;
 public class LockKey : ACircularMotionObject
 {
     [SerializeField] private float unlockedValue;
+    [SerializeField] private AudioSource turnAudio;
     
     public override InteractionTag Tag => InteractionTag.Default;
 
@@ -13,9 +14,13 @@ public class LockKey : ACircularMotionObject
     public UnityEvent onDoorUnlocked;
 
     private bool _locked = true;
+
+    public void ForceRotation(bool open)
+    {
+        rotation = new Vector3(0, 0, open ? rotationLimits.y : rotationLimits.x);
+    }
     
-    
-    protected override void OnRotate(Vector3 rotation)
+    protected override void OnRotate()
     {
         var z = rotation.z;
         var min = rotationLimits.x;
@@ -23,7 +28,6 @@ public class LockKey : ACircularMotionObject
         var t = Mathf.Abs(unlockedValue - Mathf.InverseLerp(min, max, z));
         
         onKeyMove.Invoke(t);
-        Debug.Log($"t: {t}");
 
         switch (t)
         {
@@ -36,5 +40,15 @@ public class LockKey : ACircularMotionObject
                 onDoorLocked.Invoke();
                 break;
         }
+    }
+
+    protected override void OnRotationBegin()
+    {
+        turnAudio.Play();
+    }
+
+    protected override void OnRotationEnd()
+    {
+        turnAudio.Pause();
     }
 }
