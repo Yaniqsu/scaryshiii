@@ -5,8 +5,8 @@ public class Drawer : PhysicsInteractable
 {
     [SerializeField] private Rigidbody _rb;
     [SerializeField] private ConfigurableJoint _joint;
-    [SerializeField] private AudioSource _closeSource;
-    [SerializeField] private AudioSource _moveSource;
+    //[SerializeField] private AudioSource _closeSource;
+    //[SerializeField] private AudioSource _moveSource;
     [SerializeField] private float _openTreshold;
     [SerializeField] private float _closeTreshold;
     [SerializeField] private float moveSpeed = 150f;
@@ -33,9 +33,9 @@ public class Drawer : PhysicsInteractable
     private void Update()
     {
         var speed = rb.linearVelocity.magnitude;
-        _moveSource.volume = Mathf.Clamp01(speed);
+        //_moveSource.volume = Mathf.Clamp01(speed);
 
-        if (speed > 0.01f)
+        /*if (speed > 0.01f)
         {
             if (!_moveSource.isPlaying)
                 _moveSource.Play();
@@ -43,7 +43,7 @@ public class Drawer : PhysicsInteractable
         else
         {
             _moveSource.Stop();
-        }
+        }*/
     }
 
     public override void BeginInteraction(InteractionContext context)
@@ -94,8 +94,8 @@ public class Drawer : PhysicsInteractable
     {
         _doorClosed = true;
 
-        _closeSource.volume = Mathf.Clamp01(_rb.linearVelocity.magnitude);
-        _closeSource.Play();
+        //_closeSource.volume = Mathf.Clamp01(_rb.linearVelocity.magnitude);
+        //_closeSource.Play();
     }
 
     private void OpenDoor()

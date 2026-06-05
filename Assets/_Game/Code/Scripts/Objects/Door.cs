@@ -20,11 +20,11 @@ public class Door : PhysicsInteractable
 
     [Header("Components")] 
     [SerializeField] private DoorLock doorLock;
-    [SerializeField] private AudioSource _openDoorSource;
-    [SerializeField] private AudioSource _closeDoorSource;
-    [SerializeField] private AudioSource _squeakSource;
-    [SerializeField] private AudioSource _lockSource;
-    [SerializeField] private AudioSource _unlockSource;
+    //[SerializeField] private AudioSource _openDoorSource;
+    //[SerializeField] private AudioSource _closeDoorSource;
+    //[SerializeField] private AudioSource _squeakSource;
+    //[SerializeField] private AudioSource _lockSource;
+    //[SerializeField] private AudioSource _unlockSource;
 
     private HingeJoint _hinge;
 
@@ -54,9 +54,9 @@ public class Door : PhysicsInteractable
     private void Update()
     {
         var speed = rb.angularVelocity.magnitude;
-        _squeakSource.volume = Mathf.Clamp01(speed);
+        //_squeakSource.volume = Mathf.Clamp01(speed);
 
-        if (speed > 0.05f)
+        /*if (speed > 0.05f)
         {
             if (!_squeakSource.isPlaying)
                 _squeakSource.Play();
@@ -64,7 +64,7 @@ public class Door : PhysicsInteractable
         else
         {
             _squeakSource.Stop();
-        }
+        }*/
     }
 
     public override void BeginInteraction(InteractionContext context)
@@ -115,8 +115,8 @@ public class Door : PhysicsInteractable
         _doorClosed = true;
         
         var speed = rb.angularVelocity.magnitude;
-        _closeDoorSource.volume = Mathf.Clamp01(speed);
-        _closeDoorSource.Play();
+        //_closeDoorSource.volume = Mathf.Clamp01(speed);
+        //_closeDoorSource.Play();
     }
 
     private void OpenDoor()
@@ -125,7 +125,7 @@ public class Door : PhysicsInteractable
             return;
         
         _doorClosed = false;
-        _openDoorSource.Play();
+        //_openDoorSource.Play();
     }
 
     public void ToggleLocked(bool locked)
@@ -134,10 +134,10 @@ public class Door : PhysicsInteractable
         {
             this.locked = locked;
 
-            if (this.locked)
+            /*if (this.locked)
                 _lockSource.Play();
             else
-                _unlockSource.Play();
+                _unlockSource.Play();*/
         }
         
         SetLockedLimits(locked);
