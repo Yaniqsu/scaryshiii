@@ -55,7 +55,8 @@ MonoBehaviour:
   maxTorque: 1
   torqueSign: 1
   unlockedValue: 0
-  turnAudio: {fileID: 0}
+  soundBank: {fileID: 11400000, guid: 4edc7dad8865d9d4e9bb42e2e72a7625, type: 2}
+  turnSound: Rotate
   onKeyMove:
     m_PersistentCalls:
       m_Calls: []

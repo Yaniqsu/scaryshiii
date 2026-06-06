@@ -25,7 +25,7 @@ namespace YNQ.InteractionSystem
         private float _inputVelocity;
         private bool _hasLastDir;
 
-        private void Awake()
+        protected virtual void Awake()
         {
             if (rotationLimits.x > rotationLimits.y)
             {

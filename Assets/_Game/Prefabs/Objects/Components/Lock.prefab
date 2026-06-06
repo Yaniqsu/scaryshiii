@@ -119,7 +119,8 @@ MonoBehaviour:
   blockade: {fileID: 8844676576386539689}
   blockadePosMin: {x: 0.4152, y: -0.69699734, z: -0.0012798976}
   blockadePosMax: {x: 0.40148702, y: -0.69699734, z: -0.0012798976}
-  insertAudio: {fileID: 0}
+  soundBank: {fileID: 11400000, guid: c35d51bb2df630246b7f3900b287c3ff, type: 2}
+  insertAudioSound: Insert
 --- !u!54 &1658974240253237232
 Rigidbody:
   m_ObjectHideFlags: 0

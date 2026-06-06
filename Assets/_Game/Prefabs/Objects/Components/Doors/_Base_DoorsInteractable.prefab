@@ -337,11 +337,12 @@ MonoBehaviour:
   maxTorque: 15
   mouseSensitivity: 1
   doorLock: {fileID: 2455743511306004562}
-  _openDoorSource: {fileID: 0}
-  _closeDoorSource: {fileID: 0}
-  _squeakSource: {fileID: 0}
-  _lockSource: {fileID: 0}
-  _unlockSource: {fileID: 0}
+  soundBank: {fileID: 11400000, guid: cfbc611aff4b4024bab816744581c80c, type: 2}
+  openDoorSound: Open
+  closeDoorSound: Close
+  squeakSound: Squeak
+  lockSound: Lock
+  unlockSound: Unlock
 --- !u!59 &7254802051926907254
 HingeJoint:
   m_ObjectHideFlags: 0

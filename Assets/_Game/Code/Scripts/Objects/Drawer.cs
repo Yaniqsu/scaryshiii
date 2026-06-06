@@ -1,3 +1,4 @@
+using FMOD.Studio;
 using UnityEngine;
 using YNQ.InteractionSystem;
 
@@ -5,8 +6,9 @@ public class Drawer : PhysicsInteractable
 {
     [SerializeField] private Rigidbody _rb;
     [SerializeField] private ConfigurableJoint _joint;
-    [SerializeField] private AudioSource _closeSource;
-    [SerializeField] private AudioSource _moveSource;
+    [SerializeField] private SoundBank soundBank;
+    [SerializeField, SoundName(nameof(soundBank))] private string closeSound;
+    [SerializeField, SoundName(nameof(soundBank))] private string moveSound;
     [SerializeField] private float _openTreshold;
     [SerializeField] private float _closeTreshold;
     [SerializeField] private float moveSpeed = 150f;
@@ -21,6 +23,7 @@ public class Drawer : PhysicsInteractable
     private int _moveSign;
     private bool _doorClosed = true;
     private Vector3 _startPos;
+    private EventInstance _moveSoundInstance;
     
     protected override void Awake()
     {
@@ -29,20 +32,27 @@ public class Drawer : PhysicsInteractable
         _moveDirection = transform.TransformDirection(_joint.axis);
         _startPos = transform.localPosition;
     }
-    
+
+    private void Start()
+    {
+        _moveSoundInstance = AudioManager.instance.CreateInstance(soundBank[moveSound]);
+    }
+
     private void Update()
     {
         var speed = rb.linearVelocity.magnitude;
-        _moveSource.volume = Mathf.Clamp01(speed);
+        _moveSoundInstance.getPlaybackState(out var state);
+        
+        _moveSoundInstance.setParameterByName("drawer_move_gain", Mathf.Clamp01(speed));
 
         if (speed > 0.01f)
         {
-            if (!_moveSource.isPlaying)
-                _moveSource.Play();
+            if (state != PLAYBACK_STATE.PLAYING)
+                _moveSoundInstance.start();
         }
         else
         {
-            _moveSource.Stop();
+            _moveSoundInstance.stop(STOP_MODE.ALLOWFADEOUT);
         }
     }
 
@@ -93,9 +103,11 @@ public class Drawer : PhysicsInteractable
     private void CloseDoor()
     {
         _doorClosed = true;
-
-        _closeSource.volume = Mathf.Clamp01(_rb.linearVelocity.magnitude);
-        _closeSource.Play();
+        var speed = Mathf.Clamp01(_rb.linearVelocity.magnitude);
+        
+        if(speed > 0.3f)
+            AudioManager.PlayOneShot(soundBank[closeSound], transform.position,
+                ("drawer_close_gain", speed));
     }
 
     private void OpenDoor()

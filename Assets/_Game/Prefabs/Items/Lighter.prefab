@@ -178,11 +178,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HandLighter
   fireParticles: {fileID: 667221236161532861}
   animator: {fileID: 6625520595598058803}
-  clickSource: {fileID: 0}
-  lightSource: {fileID: 0}
-  extinguishSource: {fileID: 0}
-  baseLightVolume: 0.2
+  lighterSoundBank: {fileID: 11400000, guid: 31b5e712f2c2ce445991a70105cbedb4, type: 2}
   lightVolumeIncrease: 0.2
+  clickName: Click
+  igniteName: Ignite
+  extinguishName: Extinguish
 --- !u!95 &6625520595598058803
 Animator:
   serializedVersion: 7
