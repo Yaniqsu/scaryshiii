@@ -41,6 +41,6 @@ public class HandLighter : MonoBehaviour
     {
         fireParticles.Stop();
         fireParticles.Clear();
-        //AudioManager.PlayOneShot(_extinguish, transform.position);
+        AudioManager.PlayOneShot(_extinguish, transform.position);
     }
 }

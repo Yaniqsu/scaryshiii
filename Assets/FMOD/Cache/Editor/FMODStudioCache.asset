@@ -472,7 +472,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 380
+  Length: 678
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -516,7 +516,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -1788402197173071628}
   cacheVersion: 131859
-  cacheTime: 639164464710782659
+  cacheTime: 639164468807097307
   SerializableEventsDict:
   - key: event:/Environment/Doors/Squeak
     index: 0
@@ -745,10 +745,10 @@ MonoBehaviour:
   Path: ../../Users/wierz/Documents/Dark/Build/Desktop/Player.bank
   Name: Player
   StudioPath: bank:/Player
-  lastModified: 639164464710782659
+  lastModified: 639164468807097307
   FileSizes:
   - Name: Desktop
-    Value: 108416
+    Value: 96928
   Exists: 1
 --- !u!114 &7694206763583024407
 MonoBehaviour:
