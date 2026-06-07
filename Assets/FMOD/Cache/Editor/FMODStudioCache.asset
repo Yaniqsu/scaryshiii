@@ -54,6 +54,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 819
+--- !u!114 &-8425307050216600315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/move_speed
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: move_speed
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1592708602
+    data2: 2725430026
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-7726360583322329734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,10 +231,10 @@ MonoBehaviour:
   Path: ../../Users/wierz/Documents/Dark/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639163424807880781
+  lastModified: 639164398466750431
   FileSizes:
   - Name: Desktop
-    Value: 1824
+    Value: 1980
   Exists: 1
 --- !u!114 &-1140898147859360327
 MonoBehaviour:
@@ -290,6 +314,32 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1400
+--- !u!114 &-227373022235815570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/surface_type
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: surface_type
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 611110433
+    data2: 2594634733
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Wood
+  - Carpet
+  Exists: 1
 --- !u!114 &-158246768462880103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -403,13 +453,14 @@ MonoBehaviour:
   - {fileID: 3993166442857722744}
   - {fileID: -7726360583322329734}
   - {fileID: -7648035968040815509}
+  - {fileID: 8284758442351953465}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5009876305877077308}
   StringsBanks:
   - {fileID: -1788402197173071628}
   cacheVersion: 131859
-  cacheTime: 639163435674383571
+  cacheTime: 639164399317107192
   SerializableEventsDict:
   - key: event:/Environment/Doors/Squeak
     index: 0
@@ -443,6 +494,8 @@ MonoBehaviour:
     index: 14
   - key: event:/Environment/Drawer/Close
     index: 15
+  - key: event:/Player/Character/Footsteps
+    index: 16
 --- !u!114 &59143942693204535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -585,7 +638,7 @@ MonoBehaviour:
   Path: ../../Users/wierz/Documents/Dark/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639163424807860834
+  lastModified: 639164398466730483
   FileSizes:
   - Name: Desktop
     Value: 1074
@@ -632,10 +685,10 @@ MonoBehaviour:
   Path: ../../Users/wierz/Documents/Dark/Build/Desktop/Player.bank
   Name: Player
   StudioPath: bank:/Player
-  lastModified: 639163410213642830
+  lastModified: 639164399317107192
   FileSizes:
   - Name: Desktop
-    Value: 39232
+    Value: 70016
   Exists: 1
 --- !u!114 &7694206763583024407
 MonoBehaviour:
@@ -711,3 +764,32 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 420
+--- !u!114 &8284758442351953465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Character/Footsteps
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Player/Character/Footsteps
+  Guid:
+    Data1: 1349172378
+    Data2: 1282229835
+    Data3: 1047191444
+    Data4: 1539702522
+  Banks:
+  - {fileID: 7064188294887209843}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -227373022235815570}
+  - {fileID: -8425307050216600315}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0

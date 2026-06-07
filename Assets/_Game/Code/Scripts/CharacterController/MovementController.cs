@@ -6,6 +6,9 @@ namespace YNQ.Movement
 {
     public class MovementController : MonoBehaviour
     {
+        [Header("General")] 
+        [SerializeField] private float moveSpeedTreshold;
+        
         [Header("Speeds")]
         public float walkSpeed = 4f;
         public float runSpeed = 7f;
@@ -20,6 +23,7 @@ namespace YNQ.Movement
         public float deceleration = 25f;
         
         public UnityEvent<AMovementState> OnStateChanged;
+        public UnityEvent<bool> OnMoveChanged;
 
         public CharacterController CharacterController { get; private set; }
 
@@ -30,6 +34,7 @@ namespace YNQ.Movement
 
         public Vector3 HorizontalVelocity { get; private set; }
         public float VerticalVelocity { get; set; }
+        public bool Moving { get; set; }
 
         public AMovementState CurrentState { get; private set; }
 
@@ -61,6 +66,23 @@ namespace YNQ.Movement
             CurrentState.Update();
             MoveCharacter();
             JumpPressed = false;
+            
+            MovementCheck();
+        }
+
+        private void MovementCheck()
+        {
+            if(Moving && HorizontalVelocity.magnitude < moveSpeedTreshold)
+                ToggleIsMoving(false);
+            
+            if(!Moving && HorizontalVelocity.magnitude > moveSpeedTreshold)
+                ToggleIsMoving(true);
+        }
+
+        private void ToggleIsMoving(bool moving)
+        {
+            Moving = moving;
+            OnMoveChanged?.Invoke(moving);
         }
 
         public void ChangeState(AMovementState newState)

@@ -12,4 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ab46956b6ddfb4099a3e5fa4560d78, type: 3}
   m_Name: Player Sound Bank
   m_EditorClassIdentifier: Assembly-CSharp::SoundBank
-  references: []
+  references:
+  - soundName: Footsteps
+    eventReference:
+      Guid:
+        Data1: 1349172378
+        Data2: 1282229835
+        Data3: 1047191444
+        Data4: 1539702522
+      Path: event:/Player/Character/Footsteps
