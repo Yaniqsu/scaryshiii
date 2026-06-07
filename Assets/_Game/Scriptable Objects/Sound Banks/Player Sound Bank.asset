@@ -21,3 +21,19 @@ MonoBehaviour:
         Data3: 1047191444
         Data4: 1539702522
       Path: event:/Player/Character/Footsteps
+  - soundName: Crouch
+    eventReference:
+      Guid:
+        Data1: 1365085753
+        Data2: 1254633918
+        Data3: 1025937594
+        Data4: 902006042
+      Path: event:/Player/Character/Crouch
+  - soundName: Stand Up
+    eventReference:
+      Guid:
+        Data1: -1910726663
+        Data2: 1202302359
+        Data3: -603667014
+        Data4: -1718919326
+      Path: event:/Player/Character/Stand Up

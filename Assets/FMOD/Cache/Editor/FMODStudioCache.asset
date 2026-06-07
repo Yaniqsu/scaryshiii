@@ -134,6 +134,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 584
+--- !u!114 &-7307692786754137685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Character/Stand Up
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Player/Character/Stand Up
+  Guid:
+    Data1: -1910726663
+    Data2: 1202302359
+    Data3: -603667014
+    Data4: -1718919326
+  Banks:
+  - {fileID: 7064188294887209843}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 520
 --- !u!114 &-6927294938252863193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,6 +188,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 518
+--- !u!114 &-5790363175891712155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Character/Crouch
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Player/Character/Crouch
+  Guid:
+    Data1: 1365085753
+    Data2: 1254633918
+    Data3: 1025937594
+    Data4: 902006042
+  Banks:
+  - {fileID: 7064188294887209843}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 840
 --- !u!114 &-3951401171219871180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,10 +285,10 @@ MonoBehaviour:
   Path: ../../Users/wierz/Documents/Dark/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639164398466750431
+  lastModified: 639164437247698911
   FileSizes:
   - Name: Desktop
-    Value: 1980
+    Value: 2068
   Exists: 1
 --- !u!114 &-1140898147859360327
 MonoBehaviour:
@@ -454,13 +508,15 @@ MonoBehaviour:
   - {fileID: -7726360583322329734}
   - {fileID: -7648035968040815509}
   - {fileID: 8284758442351953465}
+  - {fileID: -5790363175891712155}
+  - {fileID: -7307692786754137685}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5009876305877077308}
   StringsBanks:
   - {fileID: -1788402197173071628}
   cacheVersion: 131859
-  cacheTime: 639164433946630931
+  cacheTime: 639164464710782659
   SerializableEventsDict:
   - key: event:/Environment/Doors/Squeak
     index: 0
@@ -496,6 +552,10 @@ MonoBehaviour:
     index: 15
   - key: event:/Player/Character/Footsteps
     index: 16
+  - key: event:/Player/Character/Crouch
+    index: 17
+  - key: event:/Player/Character/Stand Up
+    index: 18
 --- !u!114 &59143942693204535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -638,7 +698,7 @@ MonoBehaviour:
   Path: ../../Users/wierz/Documents/Dark/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639164398466730483
+  lastModified: 639164437247678966
   FileSizes:
   - Name: Desktop
     Value: 1074
@@ -685,10 +745,10 @@ MonoBehaviour:
   Path: ../../Users/wierz/Documents/Dark/Build/Desktop/Player.bank
   Name: Player
   StudioPath: bank:/Player
-  lastModified: 639164427121467309
+  lastModified: 639164464710782659
   FileSizes:
   - Name: Desktop
-    Value: 68224
+    Value: 108416
   Exists: 1
 --- !u!114 &7694206763583024407
 MonoBehaviour:

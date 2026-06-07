@@ -1,6 +1,7 @@
 using FMOD.Studio;
 using UnityEngine;
 using YNQ.Movement;
+using YNQ.Movement.States;
 
 public class CharacterAudioController : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class CharacterAudioController : MonoBehaviour
 
     [Header("Footsteps")] 
     [SerializeField, SoundName(nameof(soundBank))] private string footstepsSound;
+    [SerializeField, SoundName(nameof(soundBank))] private string crouchSound;
+    [SerializeField, SoundName(nameof(soundBank))] private string standUpSound;
 
     private EventInstance _footstepsInstance;
 
@@ -19,7 +22,14 @@ public class CharacterAudioController : MonoBehaviour
     {
         _footstepsInstance = AudioManager.instance.CreateInstance(soundBank[footstepsSound]);
         cameraController.OnShakePhase += PlayFootstepsAudio;
+        movementController.OnCrouchChanged.AddListener(OnCrouchChanged);
     }
+
+    private void OnCrouchChanged(bool crouching)
+    {
+        AudioManager.PlayOneShot(soundBank[crouching ? crouchSound : standUpSound], transform.position);
+    }
+
 
     private void PlayFootstepsAudio()
     {

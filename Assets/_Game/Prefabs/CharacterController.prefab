@@ -370,6 +370,9 @@ MonoBehaviour:
   OnMoveChanged:
     m_PersistentCalls:
       m_Calls: []
+  OnCrouchChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &8604688089181487489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -745,6 +748,8 @@ MonoBehaviour:
   movementController: {fileID: 506838381339507986}
   surfaceController: {fileID: 1390068169902276058}
   footstepsSound: Footsteps
+  crouchSound: Crouch
+  standUpSound: Stand Up
 --- !u!1 &3460323928628014556
 GameObject:
   m_ObjectHideFlags: 0

@@ -24,6 +24,7 @@ namespace YNQ.Movement
         
         public UnityEvent<AMovementState> OnStateChanged;
         public UnityEvent<bool> OnMoveChanged;
+        public UnityEvent<bool> OnCrouchChanged;
 
         public CharacterController CharacterController { get; private set; }
 
@@ -112,7 +113,11 @@ namespace YNQ.Movement
 
         public void SetInput(Vector2 input) => Input = input;
         public void SetRun(bool value) => RunHeld = value;
-        public void SetCrouch(bool value) => CrouchHeld = value;
+        public void SetCrouch(bool value)
+        {
+            CrouchHeld = value;
+            OnCrouchChanged?.Invoke(value);
+        }
         public void PressJump() => JumpPressed = true;
 
         public void SetHorizontalVelocity(Vector3 target, float speed)
