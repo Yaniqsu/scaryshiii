@@ -460,7 +460,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -1788402197173071628}
   cacheVersion: 131859
-  cacheTime: 639164399317107192
+  cacheTime: 639164433946630931
   SerializableEventsDict:
   - key: event:/Environment/Doors/Squeak
     index: 0
@@ -685,10 +685,10 @@ MonoBehaviour:
   Path: ../../Users/wierz/Documents/Dark/Build/Desktop/Player.bank
   Name: Player
   StudioPath: bank:/Player
-  lastModified: 639164399317107192
+  lastModified: 639164427121467309
   FileSizes:
   - Name: Desktop
-    Value: 70016
+    Value: 68224
   Exists: 1
 --- !u!114 &7694206763583024407
 MonoBehaviour:
@@ -705,10 +705,10 @@ MonoBehaviour:
   Path: ../../Users/wierz/Documents/Dark/Build/Desktop/Environment.bank
   Name: Environment
   StudioPath: bank:/Environment
-  lastModified: 639163435674383571
+  lastModified: 639164433946630931
   FileSizes:
   - Name: Desktop
-    Value: 873152
+    Value: 873856
   Exists: 1
 --- !u!114 &7934463641485271367
 MonoBehaviour:
