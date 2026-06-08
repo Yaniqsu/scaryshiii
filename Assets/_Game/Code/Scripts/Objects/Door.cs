@@ -1,4 +1,6 @@
 using System;
+using FMOD;
+using FMOD.Studio;
 using UnityEngine;
 using YNQ.InteractionSystem;
 
@@ -20,11 +22,16 @@ public class Door : PhysicsInteractable
 
     [Header("Components")] 
     [SerializeField] private DoorLock doorLock;
-    [SerializeField] private AudioSource _openDoorSource;
-    [SerializeField] private AudioSource _closeDoorSource;
-    [SerializeField] private AudioSource _squeakSource;
-    [SerializeField] private AudioSource _lockSource;
-    [SerializeField] private AudioSource _unlockSource;
+
+    [Header("Audio")] 
+    [SerializeField] private SoundBank soundBank;
+    [SerializeField, SoundName(nameof(soundBank))] private string openDoorSound;
+    [SerializeField, SoundName(nameof(soundBank))] private string closeDoorSound;
+    [SerializeField, SoundName(nameof(soundBank))] private string squeakSound;
+    [SerializeField, SoundName(nameof(soundBank))] private string lockSound;
+    [SerializeField, SoundName(nameof(soundBank))] private string unlockSound;
+
+    private EventInstance _squeakInstance;
 
     private HingeJoint _hinge;
 
@@ -48,22 +55,25 @@ public class Door : PhysicsInteractable
 
     private void Start()
     {
+        _squeakInstance = AudioManager.instance.CreateInstance(soundBank[squeakSound]);
+        
         doorLock.ToggleLock(!locked);
     }
 
     private void Update()
     {
         var speed = rb.angularVelocity.magnitude;
-        _squeakSource.volume = Mathf.Clamp01(speed);
-
-        if (speed > 0.05f)
+        _squeakInstance.setParameterByName("squeak_volume", Mathf.Clamp01(speed));
+        _squeakInstance.getPlaybackState(out var state);
+        
+        if(speed > 0.05f)
         {
-            if (!_squeakSource.isPlaying)
-                _squeakSource.Play();
+            if (state != PLAYBACK_STATE.PLAYING)
+                _squeakInstance.start();
         }
         else
         {
-            _squeakSource.Stop();
+            _squeakInstance.stop(STOP_MODE.ALLOWFADEOUT);
         }
     }
 
@@ -115,8 +125,8 @@ public class Door : PhysicsInteractable
         _doorClosed = true;
         
         var speed = rb.angularVelocity.magnitude;
-        _closeDoorSource.volume = Mathf.Clamp01(speed);
-        _closeDoorSource.Play();
+        AudioManager.PlayOneShot(soundBank[closeDoorSound], transform.position,
+            ("door_close_gain", Mathf.Clamp01(speed)));
     }
 
     private void OpenDoor()
@@ -125,7 +135,7 @@ public class Door : PhysicsInteractable
             return;
         
         _doorClosed = false;
-        _openDoorSource.Play();
+        AudioManager.PlayOneShot(soundBank[openDoorSound], transform.position);
     }
 
     public void ToggleLocked(bool locked)
@@ -134,10 +144,7 @@ public class Door : PhysicsInteractable
         {
             this.locked = locked;
 
-            if (this.locked)
-                _lockSource.Play();
-            else
-                _unlockSource.Play();
+            AudioManager.PlayOneShot(this.locked ? soundBank[lockSound] : soundBank[unlockSound], transform.position);
         }
         
         SetLockedLimits(locked);

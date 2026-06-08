@@ -13,10 +13,10 @@ namespace YNQ.Dark.InventorySystem
 
         public void Use(GameObject user)
         {
-            ItemData.behaviour.Use(this, user);
+            ItemData.Behaviour.Use(this, user);
         }
         
-        public void OnShow(GameObject user) => ItemData.behaviour.OnShow(this, user);
-        public void OnHide(GameObject user) => ItemData.behaviour.OnHide(this, user);
+        public void OnShow(GameObject user) => ItemData.Behaviour.OnShow(this, user);
+        public void OnHide(GameObject user) => ItemData.Behaviour.OnHide(this, user);
     }
 }

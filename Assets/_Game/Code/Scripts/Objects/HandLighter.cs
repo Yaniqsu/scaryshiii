@@ -1,3 +1,4 @@
+using FMODUnity;
 using UnityEngine;
 
 public class HandLighter : MonoBehaviour
@@ -6,30 +7,40 @@ public class HandLighter : MonoBehaviour
     
     [SerializeField] private ParticleSystem fireParticles;
     [SerializeField] private Animator animator;
-    [SerializeField] private AudioSource clickSource;
-    [SerializeField] private AudioSource lightSource;
-    [SerializeField] private AudioSource extinguishSource;
-    [SerializeField] private float baseLightVolume = 0.2f;
-    [SerializeField] private float lightVolumeIncrease = 0.1f;
+    [SerializeField] private SoundBank lighterSoundBank;
+    [SerializeField] private float lightVolumeIncrease = 0.2f;
+    [SerializeField, SoundName(nameof(lighterSoundBank))] private string clickName;
+    [SerializeField, SoundName(nameof(lighterSoundBank))] private string igniteName;
+    [SerializeField, SoundName(nameof(lighterSoundBank))] private string extinguishName;
+
+    private EventReference _ignite;
+    private EventReference _extinguish;
+    private EventReference _click;
+
+    private void Awake()
+    {
+        _click = lighterSoundBank.GetEventReference(clickName);
+        _ignite = lighterSoundBank.GetEventReference(igniteName);
+        _extinguish = lighterSoundBank.GetEventReference(extinguishName);
+    }
 
     public void TryLight(int attempts)
     {
-        clickSource.Play();
-        clickSource.volume = baseLightVolume + attempts * lightVolumeIncrease;
-        
+        AudioManager.PlayOneShot(_click, transform.position, 
+        ("lighter_click_gain", attempts * lightVolumeIncrease));
         animator.SetTrigger(LightTrigger);
     }
     
     public void Light()
     {
         fireParticles.Play();
-        lightSource.Play();
+        AudioManager.PlayOneShot(_ignite, transform.position);
     }
 
     public void Extinguish()
     {
         fireParticles.Stop();
         fireParticles.Clear();
-        extinguishSource.Play();
+        AudioManager.PlayOneShot(_extinguish, transform.position);
     }
 }

@@ -277,6 +277,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7130153291464264629}
+  - component: {fileID: 1400858917664857328}
   - component: {fileID: 506838381339507986}
   - component: {fileID: 8604688089181487489}
   - component: {fileID: 8993282408608285397}
@@ -287,6 +288,7 @@ GameObject:
   - component: {fileID: 8754273073075143901}
   - component: {fileID: 6618852283658422737}
   - component: {fileID: 7365321701583752871}
+  - component: {fileID: 32939849354716094}
   m_Layer: 0
   m_Name: CharacterController
   m_TagString: Untagged
@@ -307,14 +309,29 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 4407234918217751427}
   - {fileID: 1961096917197110861}
   - {fileID: 7446459143603574485}
-  - {fileID: 7667462124250587248}
   - {fileID: 2609684985281331645}
+  - {fileID: 7667462124250587248}
   - {fileID: 5211777500175963419}
   - {fileID: 3207957831363279539}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1400858917664857328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3293019761967297597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40dea81c1f25ad341aeb6432579da939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  movementController: {fileID: 506838381339507986}
+  surfaceController: {fileID: 1390068169902276058}
 --- !u!114 &506838381339507986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -327,6 +344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c5f5968a7269943ab1bb9c397b0bb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::YNQ.Movement.MovementController
+  moveSpeedTreshold: 0.1
   walkSpeed: 2
   runSpeed: 4
   crouchSpeed: 1
@@ -349,6 +367,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnMoveChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCrouchChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &8604688089181487489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,11 +386,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::YNQ.Movement.CameraController
   _controller: {fileID: 506838381339507986}
-  _camera: {fileID: 6679987116394666802}
+  cameraTransform: {fileID: 2609684985281331645}
   _lookSensitivity: 20
-  _shakeTransitionSpeed: 5
-  _standCameraPos: {x: 0, y: 0.8, z: 0}
-  _crouchCameraPos: {x: 0, y: -0.2, z: 0}
+  _shakeTransitionSpeed: 0.5
+  _standCameraPos: {x: 0, y: 1.1, z: 0}
+  _crouchCameraPos: {x: 0, y: 0.3, z: 0}
   _posChangeDuration: 0.5
   _posChangeCurve:
     serializedVersion: 2
@@ -392,18 +416,74 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _standingShake:
-    amplitude: 0.5
-    frequency: 0.5
-  _walkingShake:
-    amplitude: 0.4
-    frequency: 1.5
-  _crouchingShake:
-    amplitude: 0.8
-    frequency: 1.8
-  _runningShake:
-    amplitude: 0.8
-    frequency: 3
+  shakeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -1
+      value: -1
+      inSlope: 2.157725
+      outSlope: 2.157725
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.04419889
+    - serializedVersion: 3
+      time: 0.9972534
+      value: 1
+      inSlope: 1.3730987
+      outSlope: 1.3730987
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.060773447
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  rotationShakeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -1
+      value: -1
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  standingShake:
+    amplitude: 0.05
+    frequency: 1
+    multitude: {x: 0, y: 0.5, z: 0}
+    rotationMultitude: {x: 0, y: 0, z: 0}
+  walkingShake:
+    amplitude: 0.075
+    frequency: 0.13
+    multitude: {x: 0, y: 0.5, z: 0}
+    rotationMultitude: {x: 4, y: 0, z: 1}
+  crouchingShake:
+    amplitude: 0.15
+    frequency: 0.25
+    multitude: {x: 0, y: 0.5, z: 0}
+    rotationMultitude: {x: 0, y: 0, z: 0}
+  runningShake:
+    amplitude: 0.1
+    frequency: 0.075
+    multitude: {x: 0, y: 0.5, z: 0}
+    rotationMultitude: {x: 4, y: 0, z: -2}
 --- !u!114 &8993282408608285397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -651,6 +731,25 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &32939849354716094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3293019761967297597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d636c52849f167847a172a2a5763f239, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterAudioController
+  soundBank: {fileID: 11400000, guid: 8454895f4538dbf4caf627dfe666954b, type: 2}
+  cameraController: {fileID: 8604688089181487489}
+  movementController: {fileID: 506838381339507986}
+  surfaceController: {fileID: 1390068169902276058}
+  footstepsSound: Footsteps
+  crouchSound: Crouch
+  standUpSound: Stand Up
 --- !u!1 &3460323928628014556
 GameObject:
   m_ObjectHideFlags: 0
@@ -661,9 +760,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7667462124250587248}
   - component: {fileID: 647417817963302173}
-  - component: {fileID: 7806753055592472848}
   - component: {fileID: 3450938694101261425}
   - component: {fileID: 1065168324344192090}
+  - component: {fileID: 7433965964448589812}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -726,7 +825,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 503
+    m_Bits: 2551
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -738,14 +837,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &7806753055592472848
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3460323928628014556}
-  m_Enabled: 1
 --- !u!114 &3450938694101261425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -823,6 +914,20 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   CustomBlends: {fileID: 0}
+--- !u!114 &7433965964448589812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3460323928628014556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioListener
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &4247037891059709010
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,7 +940,7 @@ GameObject:
   - component: {fileID: 5476731255791071673}
   - component: {fileID: 3463429287044066754}
   - component: {fileID: 6963974776639344381}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1145,6 +1250,55 @@ MonoBehaviour:
   data: {fileID: 11400000, guid: e7e7c63b3c4901a468422b39ba7cd737, type: 2}
   crosshair: {fileID: 4246739098750465444}
   interactionController: {fileID: 5616853881846074249}
+--- !u!1 &6646795292240865094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4407234918217751427}
+  - component: {fileID: 1390068169902276058}
+  m_Layer: 0
+  m_Name: Surface Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4407234918217751427
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6646795292240865094}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7130153291464264629}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1390068169902276058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6646795292240865094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41be14e7ae878774d987aab4301f0d5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SurfaceController
+  checkFrequency: 0.5
+  distance: 5
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!1 &7197376273696121311
 GameObject:
   m_ObjectHideFlags: 0
@@ -1459,7 +1613,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2609684985281331645}
   - component: {fileID: 6679987116394666802}
-  - component: {fileID: 8610427988827145561}
   m_Layer: 0
   m_Name: Character Camera
   m_TagString: Untagged
@@ -1476,7 +1629,7 @@ Transform:
   m_GameObject: {fileID: 8299720789043193696}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.05671, y: 0.3571428, z: 0}
+  m_LocalPosition: {x: -0.056709766, y: 0.3571428, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1526,23 +1679,6 @@ MonoBehaviour:
       BarrelClipping: 0.25
       Anamorphism: 0
   BlendHint: 0
---- !u!114 &8610427988827145561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8299720789043193696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineBasicMultiChannelPerlin
-  NoiseProfile: {fileID: 11400000, guid: 46965f9cbaf525742a6da4c2172a99cd, type: 2}
-  PivotOffset: {x: 0, y: 0, z: 0}
-  AmplitudeGain: 1
-  FrequencyGain: 1
-  m_NoiseOffsets: {x: 181.63428, y: 802.1138, z: 390.05896}
 --- !u!1 &8697087856666292535
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,9 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4402c8385a2fb1c4ea2a73610e1c3923, type: 3}
   m_Name: Key 1
   m_EditorClassIdentifier: Assembly-CSharp::YNQ.Dark.InventorySystem.ItemData
-  itemID: Key 1
-  itemName: Key 1
-  itemSprite: {fileID: 0}
-  itemType: 0
-  behaviour: {fileID: 11400000, guid: c250796a5a8eec545a0d3e840ecec228, type: 2}
-  itemPrefab: {fileID: 3528723141049704355, guid: 330c38e5614b99141b603aa51096dccb, type: 3}
+  <ItemID>k__BackingField: Key 1
+  <ItemName>k__BackingField: Key
+  <ItemSprite>k__BackingField: {fileID: 0}
+  <ItemType>k__BackingField: 0
+  <MaterialType>k__BackingField: 1
+  <Behaviour>k__BackingField: {fileID: 11400000, guid: c250796a5a8eec545a0d3e840ecec228, type: 2}
+  <ItemPrefab>k__BackingField: {fileID: 3882977277330989650, guid: fec06037981b23142b5968ce43db75c2, type: 3}
+  <PickUpSound>k__BackingField:
+    Guid:
+      Data1: -2033227416
+      Data2: 1318684586
+      Data3: -749266795
+      Data4: 473101152
+    Path: event:/Items/Key/Pick Up

@@ -1,3 +1,4 @@
+using FMOD.Studio;
 using UnityEngine;
 using UnityEngine.Events;
 using YNQ.InteractionSystem;
@@ -5,7 +6,8 @@ using YNQ.InteractionSystem;
 public class LockKey : ACircularMotionObject
 {
     [SerializeField] private float unlockedValue;
-    [SerializeField] private AudioSource turnAudio;
+    [SerializeField] private SoundBank soundBank;
+    [SerializeField, SoundName(nameof(soundBank))] private string turnSound;
     
     public override InteractionTag Tag => InteractionTag.Default;
 
@@ -14,6 +16,14 @@ public class LockKey : ACircularMotionObject
     public UnityEvent onDoorUnlocked;
 
     private bool _locked = true;
+    private EventInstance _turnSoundInstance;
+
+    protected override void Awake()
+    {
+        base.Awake();
+        
+        _turnSoundInstance = AudioManager.instance.CreateInstance(soundBank[turnSound]);
+    }
 
     public void ForceRotation(bool open)
     {
@@ -44,11 +54,11 @@ public class LockKey : ACircularMotionObject
 
     protected override void OnRotationBegin()
     {
-        turnAudio.Play();
+        _turnSoundInstance.start();
     }
 
     protected override void OnRotationEnd()
     {
-        turnAudio.Pause();
+        _turnSoundInstance.stop(STOP_MODE.ALLOWFADEOUT);
     }
 }

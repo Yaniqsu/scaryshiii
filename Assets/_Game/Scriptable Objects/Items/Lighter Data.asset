@@ -12,9 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4402c8385a2fb1c4ea2a73610e1c3923, type: 3}
   m_Name: Lighter Data
   m_EditorClassIdentifier: Assembly-CSharp::YNQ.Dark.InventorySystem.ItemData
-  itemID: Lighter
-  itemName: Lighter
-  itemSprite: {fileID: 21300000, guid: be9fa7e1bceb0744f92d120d965ce05c, type: 3}
-  itemType: 0
-  behaviour: {fileID: 11400000, guid: 6f608c841e7fa694aa2901cd79f636ef, type: 2}
-  itemPrefab: {fileID: 8662197816616365067, guid: 164409294a3a45944a49ed792e4ebbad, type: 3}
+  <ItemID>k__BackingField: Lighter
+  <ItemName>k__BackingField: Lighter
+  <ItemSprite>k__BackingField: {fileID: 0}
+  <ItemType>k__BackingField: 0
+  <MaterialType>k__BackingField: 1
+  <Behaviour>k__BackingField: {fileID: 0}
+  <ItemPrefab>k__BackingField: {fileID: 0}
+  <PickUpSound>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 

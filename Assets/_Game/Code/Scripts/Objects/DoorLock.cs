@@ -10,7 +10,8 @@ public class DoorLock : MonoBehaviour, IInteractable
     [SerializeField] private Transform blockade;
     [SerializeField] private Vector3 blockadePosMin;
     [SerializeField] private Vector3 blockadePosMax;
-    [SerializeField] private AudioSource insertAudio;
+    [SerializeField] private SoundBank soundBank;
+    [SerializeField, SoundName(nameof(soundBank))] private string insertAudioSound;
 
     private Collider _collider;
     
@@ -32,13 +33,13 @@ public class DoorLock : MonoBehaviour, IInteractable
     public void BeginInteraction(InteractionContext context)
     {
         if (context.Player.TryGetComponent(out InventoryController inventoryController) &&
-            inventoryController.ActiveItem.ItemData.itemID == _lockID)
+            inventoryController.ActiveItem.ItemData.ItemID == _lockID)
         {
             inventoryController.DestroyItemInHand();
             _collider.enabled = false;
             enabled = false;
             
-            insertAudio.Play();
+            AudioManager.PlayOneShot(soundBank[insertAudioSound], transform.position);
             
             if(Vector3.Dot(transform.forward, context.Player.forward) > 0)
                 _keyFront.gameObject.SetActive(true);

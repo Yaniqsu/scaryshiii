@@ -1,16 +1,21 @@
+using FMOD.Studio;
+using FMODUnity;
 using UnityEngine;
 using YNQ.InteractionSystem;
 using YNQ.Player;
+using STOP_MODE = FMOD.Studio.STOP_MODE;
 
 public class Candles : MonoBehaviour, IInteractable
 {
     [SerializeField] private ParticleSystem[] fireParticles;
     [SerializeField] private new Light light;
-    [SerializeField] private AudioSource igniteAudio;
-    [SerializeField] private AudioSource extinguishAudio;
-    [SerializeField] private AudioSource flameAudio;
+    [SerializeField] private SoundBank soundBank;
+    [SerializeField, SoundName(nameof(soundBank))] private string igniteAudio;
+    [SerializeField, SoundName(nameof(soundBank))] private string extinguishAudio;
+    [SerializeField, SoundName(nameof(soundBank))] private string flameAudio;
 
     private bool _on;
+    private EventInstance _flameInstance;
 
     public InteractionType Type => InteractionType.Short;
     public InteractionTag Tag { private set; get; } = InteractionTag.Candles;
@@ -33,10 +38,13 @@ public class Candles : MonoBehaviour, IInteractable
     private void Ignite()
     {
         light.enabled = true;
-        igniteAudio.Play();
-        flameAudio.Play();
         _on = true;
         Tag = InteractionTag.Default;
+        
+        AudioManager.PlayOneShot(soundBank[igniteAudio], transform.position);
+        _flameInstance = AudioManager.instance.CreateInstance(soundBank[flameAudio]);
+        _flameInstance.set3DAttributes(transform.position.To3DAttributes());
+        _flameInstance.start();
         
         foreach (var fireParticle in fireParticles)
         {
@@ -47,8 +55,8 @@ public class Candles : MonoBehaviour, IInteractable
     private void Extinguish()
     {
         light.enabled = false;
-        extinguishAudio.Play();
-        flameAudio.Stop();
+        AudioManager.PlayOneShot(soundBank[extinguishAudio], transform.position);
+        _flameInstance.stop(STOP_MODE.ALLOWFADEOUT);
         _on = false;
         Tag = InteractionTag.Candles;
         
