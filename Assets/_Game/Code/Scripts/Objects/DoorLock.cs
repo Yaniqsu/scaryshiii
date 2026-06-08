@@ -33,7 +33,7 @@ public class DoorLock : MonoBehaviour, IInteractable
     public void BeginInteraction(InteractionContext context)
     {
         if (context.Player.TryGetComponent(out InventoryController inventoryController) &&
-            inventoryController.ActiveItem.ItemData.itemID == _lockID)
+            inventoryController.ActiveItem.ItemData.ItemID == _lockID)
         {
             inventoryController.DestroyItemInHand();
             _collider.enabled = false;

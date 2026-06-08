@@ -6,11 +6,15 @@ namespace YNQ.Dark.InventorySystem
     [RequireComponent(typeof(Rigidbody))]
     public class WorldItem : Pickable
     {
+        [Header("General")]
         [SerializeField] private ItemData data;
         
         private ItemInstance _instance;
+        private ImpactSoundPlayer _impactSoundPlayer;
         private Rigidbody _rb;
         private Collider _collider;
+
+        public ItemData ItemData => data;
 
         protected override void Awake()
         {
@@ -18,6 +22,7 @@ namespace YNQ.Dark.InventorySystem
             
             _instance = new ItemInstance(data);
             _rb = GetComponent<Rigidbody>();
+            _impactSoundPlayer = GetComponent<ImpactSoundPlayer>();
             _collider = GetComponentInChildren<Collider>();
         }
 
@@ -38,12 +43,14 @@ namespace YNQ.Dark.InventorySystem
         {
             _rb.isKinematic = false;
             _collider.enabled = true;
+            _impactSoundPlayer.Enabled = true;
         }
 
         public void SetAsInHand()
         {
             _rb.isKinematic = true;
             _collider.enabled = false;
+            _impactSoundPlayer.Enabled = false;
         }
     }
 }

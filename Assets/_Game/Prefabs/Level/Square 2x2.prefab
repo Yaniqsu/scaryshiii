@@ -248,4 +248,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e1e67dc9033f85498bdc10cb101d39f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SurfaceIdentifier
-  <SurfaceType>k__BackingField: 1
+  <SurfaceType>k__BackingField: 0

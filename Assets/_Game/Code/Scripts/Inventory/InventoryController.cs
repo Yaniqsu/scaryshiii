@@ -31,10 +31,11 @@ namespace YNQ.Dark.InventorySystem
 
         public void AddItem(ItemInstance instance)
         {
-            if (ItemInHand && instance.ItemData.itemType == ItemType.Big)
+            if (ItemInHand && instance.ItemData.ItemType == ItemType.Big)
             {
-                if(instance.ItemData.itemType == ItemType.Big)
+                if(instance.ItemData.ItemType == ItemType.Big)
                     Debug.Log("Cannot hold 2 items in a hand");
+                    //TODO: Add on screen message instead of the debug log                
                 else
                 {
                     AddItemToBackpack(instance);
@@ -42,6 +43,8 @@ namespace YNQ.Dark.InventorySystem
             }
             else
                 AddItemToHand(instance);
+            
+            AudioManager.PlayOneShot(instance.ItemData.PickUpSound, transform.position);
         }
 
         public void UseActiveItem()
@@ -56,7 +59,7 @@ namespace YNQ.Dark.InventorySystem
         {
             ActiveItem = data;
 
-            _activeItemObject = Instantiate(data.ItemData.itemPrefab, hand);
+            _activeItemObject = Instantiate(data.ItemData.ItemPrefab, hand);
             _activeItemObject.SetAsInHand();
             _handController.OccupyRightHand(_activeItemObject.gameObject);
             ActiveItem.OnShow(gameObject);
@@ -136,7 +139,7 @@ namespace YNQ.Dark.InventorySystem
         {
             var item = _backpack[index];
             
-            PlaceItemInTheWorld(Instantiate(item.ItemData.itemPrefab, hand));
+            PlaceItemInTheWorld(Instantiate(item.ItemData.ItemPrefab, hand));
             
             RemoveItemFromBackpack(index);
         }

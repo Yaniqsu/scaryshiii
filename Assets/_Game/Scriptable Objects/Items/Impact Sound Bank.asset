@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef352ab53a4d77349bb763112236b675, type: 3}
+  m_Name: Impact Sound Bank
+  m_EditorClassIdentifier: Assembly-CSharp::ImpactSoundBank
+  sounds:
+  - <MaterialType>k__BackingField: 1
+    <SurfaceType>k__BackingField: 0
+    <Sound>k__BackingField:
+      Guid:
+        Data1: -351548110
+        Data2: 1298689962
+        Data3: 676120988
+        Data4: -1322963261
+      Path: event:/Items/Impacts/Metal_Wood
+  - <MaterialType>k__BackingField: 1
+    <SurfaceType>k__BackingField: 1
+    <Sound>k__BackingField:
+      Guid:
+        Data1: 1785087809
+        Data2: 1176765805
+        Data3: -1741769073
+        Data4: 1564016205
+      Path: event:/Items/Impacts/_Carpet
+  - <MaterialType>k__BackingField: 0
+    <SurfaceType>k__BackingField: 1
+    <Sound>k__BackingField:
+      Guid:
+        Data1: 1785087809
+        Data2: 1176765805
+        Data3: -1741769073
+        Data4: 1564016205
+      Path: event:/Items/Impacts/_Carpet
