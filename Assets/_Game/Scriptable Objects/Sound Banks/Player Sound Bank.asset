@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ab46956b6ddfb4099a3e5fa4560d78, type: 3}
+  m_Name: Player Sound Bank
+  m_EditorClassIdentifier: Assembly-CSharp::SoundBank
+  references:
+  - soundName: Footsteps
+    eventReference:
+      Guid:
+        Data1: 1349172378
+        Data2: 1282229835
+        Data3: 1047191444
+        Data4: 1539702522
+      Path: event:/Player/Character/Footsteps
+  - soundName: Crouch
+    eventReference:
+      Guid:
+        Data1: 1365085753
+        Data2: 1254633918
+        Data3: 1025937594
+        Data4: 902006042
+      Path: event:/Player/Character/Crouch
+  - soundName: Stand Up
+    eventReference:
+      Guid:
+        Data1: -1910726663
+        Data2: 1202302359
+        Data3: -603667014
+        Data4: -1718919326
+      Path: event:/Player/Character/Stand Up
