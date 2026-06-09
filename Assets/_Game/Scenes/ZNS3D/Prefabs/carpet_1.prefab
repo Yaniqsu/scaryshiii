@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 690896609183269696}
   - component: {fileID: -6330126944751763460}
   - component: {fileID: 9118147204876740750}
+  - component: {fileID: 2780231115372385359}
   m_Layer: 11
   m_Name: carpet_1
   m_TagString: Untagged
@@ -140,3 +141,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2780231115372385359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2381939291485199137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e1e67dc9033f85498bdc10cb101d39f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SurfaceIdentifier
+  <SurfaceType>k__BackingField: 1

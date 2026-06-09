@@ -771,7 +771,7 @@ MonoBehaviour:
   lightChanceIncrease: 10
   lighterPrefab: {fileID: 634770561434629311, guid: 7c0cd7489121018418ca67b6a593593e, type: 3}
   lighterLight: {fileID: 841377783826334474}
-  didLightHideTime: 20
+  didLightHideTime: 40
   didntLightHideTime: 3
   lightIntensityMin: 2.7
   lightIntensityMax: 3
