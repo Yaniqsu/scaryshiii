@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8661967902211076954}
   m_Layer: 0
-  m_Name: Image
+  m_Name: Painting 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
