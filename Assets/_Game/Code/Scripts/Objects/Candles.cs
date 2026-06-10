@@ -1,3 +1,4 @@
+using System;
 using FMOD.Studio;
 using FMODUnity;
 using UnityEngine;
@@ -14,11 +15,28 @@ public class Candles : MonoBehaviour, IInteractable
     [SerializeField, SoundName(nameof(soundBank))] private string extinguishAudio;
     [SerializeField, SoundName(nameof(soundBank))] private string flameAudio;
 
-    private bool _on;
+    [SerializeField] private bool _on;
     private EventInstance _flameInstance;
 
     public InteractionType Type => InteractionType.Short;
     public InteractionTag Tag { private set; get; } = InteractionTag.Candles;
+
+    private void OnValidate()
+    {
+        light.enabled = _on;
+    }
+
+    private void Awake()
+    {
+        if (_on)
+        {
+            Tag = InteractionTag.Default;
+            foreach (var fireParticle in fireParticles)
+            {
+                fireParticle.Play();
+            }
+        }
+    }
 
     public void BeginInteraction(InteractionContext context)
     {
