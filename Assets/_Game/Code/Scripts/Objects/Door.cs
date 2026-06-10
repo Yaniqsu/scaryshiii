@@ -153,7 +153,7 @@ public class Door : PhysicsInteractable
     private void SetLockedLimits(bool locked)
     {
         var limits = _hinge.limits;
-        limits.max = this.locked ? lockTreshold : 120;
+        limits.max = this.locked ? lockTreshold : 100;
         limits.min = locked && !float.IsNaN(_hinge.angle) && _hinge.angle > lockTreshold ? blockadeAngle : 0;
         _hinge.limits = limits;
     }
