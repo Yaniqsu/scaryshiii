@@ -1,7 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Security.Cryptography;
-using System.Text;
 using NaughtyAttributes;
 using UnityEngine;
 using Random = System.Random;
